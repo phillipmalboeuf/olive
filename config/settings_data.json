@@ -1,27 +1,28 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/logoOlivelongblanc.png",
-    "logo_width": 300,
-    "type_header_font": "assistant_n4",
+    "logo": "shopify:\/\/shop_images\/Olive_LOGO.svg",
+    "logo_width": 70,
+    "favicon": "shopify:\/\/shop_images\/Olive_LOGO.svg",
+    "type_header_font": "sans-serif",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "serif",
     "body_scale": 100,
-    "page_width": 1300,
+    "page_width": 1500,
     "spacing_sections": 0,
-    "spacing_grid_horizontal": 12,
-    "spacing_grid_vertical": 8,
-    "animations_reveal_on_scroll": true,
+    "spacing_grid_horizontal": 20,
+    "spacing_grid_vertical": 20,
+    "animations_reveal_on_scroll": false,
     "animations_hover_elements": "none",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
-    "buttons_radius": 0,
+    "buttons_radius": 24,
     "buttons_shadow_opacity": 0,
     "buttons_shadow_horizontal_offset": 0,
     "buttons_shadow_vertical_offset": 4,
     "buttons_shadow_blur": 5,
     "variant_pills_border_thickness": 1,
     "variant_pills_border_opacity": 55,
-    "variant_pills_radius": 40,
+    "variant_pills_radius": 24,
     "variant_pills_shadow_opacity": 0,
     "variant_pills_shadow_horizontal_offset": 0,
     "variant_pills_shadow_vertical_offset": 4,
@@ -31,7 +32,7 @@
     "inputs_radius": 0,
     "inputs_shadow_opacity": 0,
     "inputs_shadow_horizontal_offset": 0,
-    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_vertical_offset": -12,
     "inputs_shadow_blur": 5,
     "card_style": "standard",
     "card_image_padding": 0,
@@ -47,7 +48,7 @@
     "collection_card_style": "standard",
     "collection_card_image_padding": 0,
     "collection_card_text_alignment": "left",
-    "collection_card_color_scheme": "accent-1",
+    "collection_card_color_scheme": "inverse",
     "collection_card_border_thickness": 0,
     "collection_card_border_opacity": 10,
     "collection_card_corner_radius": 0,
@@ -95,8 +96,8 @@
     "drawer_shadow_blur": 5,
     "badge_position": "bottom left",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "accent-2",
-    "sold_out_badge_color_scheme": "inverse",
+    "sale_badge_color_scheme": "inverse",
+    "sold_out_badge_color_scheme": "background-2",
     "brand_headline": "",
     "brand_description": "<p><\/p>",
     "brand_image_width": 100,
@@ -151,57 +152,57 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#f7f2ea",
           "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
+          "text": "#a9452d",
+          "button": "#a9452d",
           "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "secondary_button_label": "#a9452d",
+          "shadow": "rgba(0,0,0,0)"
         }
       },
       "background-2": {
         "settings": {
-          "background": "#f3f3f3",
+          "background": "#f7f2ea",
           "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#f3f3f3",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "text": "#999162",
+          "button": "#999162",
+          "button_label": "#f7f2ea",
+          "secondary_button_label": "#999162",
+          "shadow": "rgba(0,0,0,0)"
         }
       },
       "inverse": {
         "settings": {
-          "background": "#242833",
+          "background": "#a9452d",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#000000",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#f7f2ea",
+          "button": "#f7f2ea",
+          "button_label": "#a9452d",
+          "secondary_button_label": "#f7f2ea",
+          "shadow": "rgba(0,0,0,0)"
         }
       },
       "accent-1": {
         "settings": {
-          "background": "#121212",
+          "background": "#fde2b0",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#121212",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#a9452d",
+          "button": "#a9452d",
+          "button_label": "#fde2b0",
+          "secondary_button_label": "#a9452d",
+          "shadow": "rgba(0,0,0,0)"
         }
       },
       "accent-2": {
         "settings": {
-          "background": "#334fb4",
+          "background": "#999162",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#334fb4",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#f7f2ea",
+          "button": "#f7f2ea",
+          "button_label": "#999162",
+          "secondary_button_label": "#f7f2ea",
+          "shadow": "rgba(0,0,0,0)"
         }
       }
     }

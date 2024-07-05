@@ -44,6 +44,38 @@
     %}
 
     {% style %}
+      @font-face {
+        font-family: 'HAL Timezone';
+        src: url('{{ 'HALTimezone-Regular.otf' | asset_url }}');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'HAL Timezone';
+        src: url('{{ 'HALTimezone-Italic.otf' | asset_url }}');
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+      }
+/* 
+      @font-face {
+        font-family: 'HAL Timezone';
+        src: url('{{ 'HALTimezone-MonoRegular.otf' | asset_url }}');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      } */
+
+      @font-face {
+        font-family: 'HAL Four Grotesk';
+        src: url('{{ 'HALFourGrotesk-Medium.otf' | asset_url }}');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
@@ -96,12 +128,12 @@
       }
 
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+        --font-body-family: 'HAL Timezone', {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+        --font-heading-family: 'HAL Four Grotesk', {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
