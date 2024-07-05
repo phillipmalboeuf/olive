@@ -1,0 +1,270 @@
+{
+  "sections": {
+    "6f481e0c-96ba-453a-a93b-0db1320e67b2": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3-_salle.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "20109344-06f0-4ee9-af49-2b5e45febc6d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21405094215991__20109344-06f0-4ee9-af49-2b5e45febc6d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fait maison  depuis 1998",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "template--21405094215991__20109344-06f0-4ee9-af49-2b5e45febc6d-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Notre Histoire",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "À propos",
+            "button_link_1": "shopify:\/\/pages\/notre-histoire",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/og_136.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "8d92b1bd-76c2-4d66-b175-dbb4dc41c2ce": {
+      "type": "image-banner",
+      "blocks": {
+        "b4b0e9d6-f046-4b95-afc2-e8d4cd1dd7bd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "1d0b5476-d44a-4b8b-867b-56641cbb1cf7": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "b4b0e9d6-f046-4b95-afc2-e8d4cd1dd7bd",
+        "1d0b5476-d44a-4b8b-867b-56641cbb1cf7"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Du côté resto",
+            "heading_size": "h1"
+          }
+        },
+        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bienvenue dans notre resto où nous faisons tout maison. Nous offrons déjeuner et lunch de 8h à 17h du lundi au jeudi et de 8h à 18h du vendredi au dimanche.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Menu",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0717\/8289\/1831\/files\/menu_fr_a21f6dda-6bb5-495a-90e1-0965558c8dc9.pdf?v=1711117864",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-heading-1",
+        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-text-1",
+        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/L1150739.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 12
+      }
+    },
+    "1afd084c-95ae-4885-a63b-3c4d3eb8b39c": {
+      "type": "image-with-text",
+      "blocks": {
+        "b89a9829-cd34-4fd3-a294-7b8156d47056": {
+          "type": "heading",
+          "settings": {
+            "heading": "Du côté boutique",
+            "heading_size": "h1"
+          }
+        },
+        "090df0ca-0cea-4550-874e-5504060fecde": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nous avons ouvert une petite boutique à la porte voisine du resto avec des ingrédients et des ustensiles de cuisine, de la vaisselle et de la poterie que nous aimons et bien plus. Nous avons tout pour que vous cuisiniez, pour que vous dressiez votre table pour recevoir  et rendre votre maison accueillante.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "d41a9881-091a-4e39-a14a-ff9a24c78560": {
+          "type": "button",
+          "settings": {
+            "button_label": "Magasinez",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "b89a9829-cd34-4fd3-a294-7b8156d47056",
+        "090df0ca-0cea-4550-874e-5504060fecde",
+        "d41a9881-091a-4e39-a14a-ff9a24c78560"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/L1170179-2.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 12,
+        "padding_bottom": 16
+      }
+    },
+    "image_with_text_UeR6XQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8EDBkj": {
+          "type": "heading",
+          "settings": {
+            "heading": "O+G recrute !",
+            "heading_size": "h1"
+          }
+        },
+        "text_YNHdXz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Olive et Gourmando est toujours à la recherche de supers humains pour agrandir la famille. Que ce soit en service ou en cuisine, envoie-nous ton CV <\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_AWNH8w": {
+          "type": "button",
+          "settings": {
+            "button_label": "Ton CV par ici !",
+            "button_link": "mailto:info@oliveetgourmando.com",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8EDBkj",
+        "text_YNHdXz",
+        "button_AWNH8w"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/L1000676.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "6f481e0c-96ba-453a-a93b-0db1320e67b2",
+    "20109344-06f0-4ee9-af49-2b5e45febc6d",
+    "image_banner",
+    "8d92b1bd-76c2-4d66-b175-dbb4dc41c2ce",
+    "e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c",
+    "1afd084c-95ae-4885-a63b-3c4d3eb8b39c",
+    "image_with_text_UeR6XQ"
+  ]
+}
