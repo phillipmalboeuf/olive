@@ -2,6 +2,40 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "newsletter_mzbtjG": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_nzW8JN": {
+          "type": "heading",
+          "settings": {
+            "heading": "On s’aime un peu, beaucoup, \u2028à la folie?",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_hWeCxA": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Pour avoir votre dose d’Olive au quotidien, suivez-nous ici ou inscrivez-vous à notre infolettre pour ne rien manquer de ce qu’il se passe chez nous.<\/p>"
+          }
+        },
+        "email_form_FxbjR4": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_nzW8JN",
+        "paragraph_hWeCxA",
+        "email_form_FxbjR4"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -33,6 +67,7 @@
     }
   },
   "order": [
+    "newsletter_mzbtjG",
     "footer"
   ]
 }

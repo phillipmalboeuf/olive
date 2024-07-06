@@ -71,7 +71,7 @@
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
                     {{ block.shopify_attributes }}
                   >
-                    {{ block.settings.heading }}
+                    {{ block.settings.heading  | replace: "\n", "<br>" }}
                   </h2>
                 {%- when 'caption' -%}
                   <p
@@ -106,6 +106,8 @@
     </div>
   </div>
 </div>
+
+<hr class="color-{{ section.settings.section_color_scheme }}">
 
 {% schema %}
 {

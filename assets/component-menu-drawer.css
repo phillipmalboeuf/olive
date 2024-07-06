@@ -27,10 +27,10 @@ menu-drawer > details[open] > summary::before {
 
 .menu-drawer {
   position: absolute;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   visibility: hidden;
   z-index: 3;
-  left: 0;
+  right: 0;
   top: 100%;
   width: 100%;
   padding: 0;
@@ -49,7 +49,7 @@ menu-drawer > details[open] > summary::before {
 
 .js details[open] > .menu-drawer,
 .js details[open] > .menu-drawer__submenu {
-  transition: transform var(--duration-default) ease, visibility var(--duration-default) ease;
+  transition: transform var(--duration-long) ease, visibility var(--duration-long) ease;
 }
 
 .js details[open].menu-opening > .menu-drawer,
@@ -64,10 +64,11 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 @media screen and (min-width: 750px) {
   .menu-drawer {
-    width: 40rem;
-    border-width: 0 var(--drawer-border-width) 0 0;
+    width: calc(50vw + 3px);
+    border-left: 1px solid rgb(var(--color-foreground));
+    /* border-width: 0 0 0 var(--drawer-border-width);
     border-style: solid;
-    border-color: rgba(var(--color-foreground), var(--drawer-border-opacity));
+    border-color: rgba(var(--color-foreground), var(--drawer-border-opacity)); */
   }
 }
 

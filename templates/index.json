@@ -1,259 +1,324 @@
 {
   "sections": {
-    "6f481e0c-96ba-453a-a93b-0db1320e67b2": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/3-_salle.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "zoom-in",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": true
-      }
-    },
-    "20109344-06f0-4ee9-af49-2b5e45febc6d": {
+    "rich_text_3EMf4N": {
       "type": "rich-text",
       "blocks": {
-        "template--21405094215991__20109344-06f0-4ee9-af49-2b5e45febc6d-heading-1": {
+        "heading_m7cAyp": {
           "type": "heading",
           "settings": {
-            "heading": "Fait maison  depuis 1998",
-            "heading_size": "h0"
+            "heading": "olive\\n+ gourmando",
+            "heading_size": "hxxl"
           }
         }
       },
       "block_order": [
-        "template--21405094215991__20109344-06f0-4ee9-af49-2b5e45febc6d-heading-1"
+        "heading_m7cAyp"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-1",
+        "height": "full",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 40
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Notre Histoire",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "À propos",
-            "button_link_1": "shopify:\/\/pages\/notre-histoire",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/og_136.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "zoom-in",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": true
-      }
-    },
-    "8d92b1bd-76c2-4d66-b175-dbb4dc41c2ce": {
-      "type": "image-banner",
-      "blocks": {
-        "b4b0e9d6-f046-4b95-afc2-e8d4cd1dd7bd": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "1d0b5476-d44a-4b8b-867b-56641cbb1cf7": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "b4b0e9d6-f046-4b95-afc2-e8d4cd1dd7bd",
-        "1d0b5476-d44a-4b8b-867b-56641cbb1cf7"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c": {
+    "image_with_text_BE3gY7": {
       "type": "image-with-text",
       "blocks": {
-        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-heading-1": {
+        "heading_HEtPRf": {
           "type": "heading",
           "settings": {
-            "heading": "Du côté resto",
-            "heading_size": "h1"
+            "heading": "Une cuisine sincère, faite maison depuis 1998.",
+            "heading_size": "h0"
           }
         },
-        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-text-1": {
+        "text_Ukaiin": {
           "type": "text",
           "settings": {
-            "text": "<p>Bienvenue dans notre resto où nous faisons tout maison. Nous offrons déjeuner et lunch de 8h à 17h du lundi au jeudi et de 8h à 18h du vendredi au dimanche.<\/p>",
+            "text": "<p>Depuis plus de 25 ans, on nourrit notre fidèle clientèle et les touristes qui arpentent les rues du Vieux-Montréal dans notre boulangerie-café-restaurant de la rue Saint-Paul. On se démène, on travaille fort (et on s’amuse) sept jours sur sept, pour transformer l’ordinaire en extraordinaire pour toutes les personnes qui passent le pas de notre porte. La preuve? La file d’attente quotidienne en dit long sur la réputation de notre établissement!<\/p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HEtPRf",
+        "text_Ukaiin"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DO01020542.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "inverse",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_qy8MkJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pNhqpT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Maintenant au Royalmount",
+            "heading_size": "h0"
+          }
+        },
+        "text_6rdi8f": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>La famille s’agrandît<\/h3><p>On prend place dans le tout nouveau, tout beau centre Royalmount, pour se rapprocher des gens pour qui le Vieux-Montréal est juste un peu trop loin. Promis, on y retrouve la même ambiance chaleureuse et les mêmes classiques qu’à notre resto de la rue Saint-Paul, mais avec une petite twist bien spéciale comme on y sert aussi une cuisine de soir.<\/p>",
             "text_style": "body"
           }
         },
-        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-button-1": {
+        "button_UFnHDG": {
           "type": "button",
           "settings": {
-            "button_label": "Menu",
-            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0717\/8289\/1831\/files\/menu_fr_a21f6dda-6bb5-495a-90e1-0965558c8dc9.pdf?v=1711117864",
+            "button_label": "Voir le menu",
+            "button_link": "shopify:\/\/pages\/menu",
             "button_style_secondary": true
           }
         }
       },
       "block_order": [
-        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-heading-1",
-        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-text-1",
-        "template--21405094215991__e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c-button-1"
+        "heading_pNhqpT",
+        "text_6rdi8f",
+        "button_UFnHDG"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/L1150739.jpg",
-        "height": "medium",
+        "image": "shopify:\/\/shop_images\/L2050890-3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "accent-1",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_pLDKGn": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9jEnnb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Un p’tit aperçu de ce qui vous attend si vous passez nous voir la bette.",
+            "heading_size": "hxl"
+          }
+        },
+        "text_JFG9UV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*Notre cuisine est saisonnière et varie selon les arrivages et l’inspiration de nos équipes en cuisine.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9jEnnb",
+        "text_JFG9UV"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2-og_364.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "background-2",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_MDKgC6": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jYNHzM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don’t worry. Nos fameux classiques sont toujours au menu!",
+            "heading_size": "h0"
+          }
+        },
+        "button_Cbj9Xj": {
+          "type": "button",
+          "settings": {
+            "button_label": "Menu Vieux-Montréal",
+            "button_link": "shopify:\/\/pages\/menu",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_jYNHzM",
+        "button_Cbj9Xj"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/L1110163.jpg",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "background-1",
+        "section_color_scheme": "background-2",
+        "color_scheme": "background-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
-    "1afd084c-95ae-4885-a63b-3c4d3eb8b39c": {
+    "image_with_text_TcFjtN": {
       "type": "image-with-text",
       "blocks": {
-        "b89a9829-cd34-4fd3-a294-7b8156d47056": {
+        "heading_7R6Pwe": {
           "type": "heading",
           "settings": {
-            "heading": "Du côté boutique",
-            "heading_size": "h1"
+            "heading": "Bye bye la file, bonjour la magie d’Olive \u2028à la maison.",
+            "heading_size": "h0"
           }
         },
-        "090df0ca-0cea-4550-874e-5504060fecde": {
+        "text_WtfgzN": {
           "type": "text",
           "settings": {
-            "text": "<p>Nous avons ouvert une petite boutique à la porte voisine du resto avec des ingrédients et des ustensiles de cuisine, de la vaisselle et de la poterie que nous aimons et bien plus. Nous avons tout pour que vous cuisiniez, pour que vous dressiez votre table pour recevoir  et rendre votre maison accueillante.<\/p>",
-            "text_style": "body"
+            "text": "<p>Vous n’avez qu’à commander en ligne vos plats favoris et planifier votre heure de ramassage ou de livraison. On s’occupe du reste.<\/p>",
+            "text_style": "subtitle"
           }
         },
-        "d41a9881-091a-4e39-a14a-ff9a24c78560": {
+        "button_rEgUUt": {
           "type": "button",
           "settings": {
-            "button_label": "Magasinez",
-            "button_link": "shopify:\/\/collections",
+            "button_label": "Commander",
+            "button_link": "shopify:\/\/pages\/livraisons",
             "button_style_secondary": true
           }
         }
       },
       "block_order": [
-        "b89a9829-cd34-4fd3-a294-7b8156d47056",
-        "090df0ca-0cea-4550-874e-5504060fecde",
-        "d41a9881-091a-4e39-a14a-ff9a24c78560"
+        "heading_7R6Pwe",
+        "text_WtfgzN",
+        "button_rEgUUt"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/L1170179-2.jpg",
-        "height": "medium",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "accent-2",
+        "color_scheme": "accent-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_T43D3V": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JakWpq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Boutique",
+            "heading_size": "h0"
+          }
+        },
+        "text_c8McPe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Parce que tout le monde veut une p’tite touche d’Olive chez soi, on vous propose une sélection d’ingrédients chouchous, de la belle vaisselle et tout plein d’accessoires à collectionner et à chérir.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_DyJWTF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Magasiner",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_JakWpq",
+        "text_c8McPe",
+        "button_DyJWTF"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/L1070577.jpg",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
-        "color_scheme": "accent-1",
+        "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 12,
-        "padding_bottom": 16
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "image_with_text_UeR6XQ": {
+    "image_with_text_398C3m": {
       "type": "image-with-text",
       "blocks": {
-        "heading_8EDBkj": {
+        "heading_ikhkKt": {
           "type": "heading",
           "settings": {
-            "heading": "O+G recrute !",
-            "heading_size": "h1"
+            "heading": "Travailler avec nous",
+            "heading_size": "h0"
           }
         },
-        "text_YNHdXz": {
+        "text_FyHKCL": {
           "type": "text",
           "settings": {
-            "text": "<p>Olive et Gourmando est toujours à la recherche de supers humains pour agrandir la famille. Que ce soit en service ou en cuisine, envoie-nous ton CV <\/p>",
+            "text": "<h3>À nos yeux, une entreprise n’est rien sans les personnes qui la font vivre…<\/h3><p>Et le succès d’Olive, c’est l’affaire de tous. Ici, on respecte autant les membres de notre équipe que les aliments qu’on cuisine. Alors, envie de faire partie de notre grande famille?<\/p>",
             "text_style": "body"
           }
         },
-        "button_AWNH8w": {
+        "button_7GGXBb": {
           "type": "button",
           "settings": {
-            "button_label": "Ton CV par ici !",
-            "button_link": "mailto:info@oliveetgourmando.com",
-            "button_style_secondary": false
+            "button_label": "Postuler",
+            "button_link": "shopify:\/\/pages\/contact-1",
+            "button_style_secondary": true
           }
         }
       },
       "block_order": [
-        "heading_8EDBkj",
-        "text_YNHdXz",
-        "button_AWNH8w"
+        "heading_ikhkKt",
+        "text_FyHKCL",
+        "button_7GGXBb"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/L1000676.jpg",
-        "height": "small",
-        "desktop_image_width": "small",
+        "height": "adapt",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
-        "color_scheme": "accent-1",
+        "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -262,12 +327,13 @@
     }
   },
   "order": [
-    "6f481e0c-96ba-453a-a93b-0db1320e67b2",
-    "20109344-06f0-4ee9-af49-2b5e45febc6d",
-    "image_banner",
-    "8d92b1bd-76c2-4d66-b175-dbb4dc41c2ce",
-    "e1bfbd5d-6eb5-4f25-97c2-3e773301cc4c",
-    "1afd084c-95ae-4885-a63b-3c4d3eb8b39c",
-    "image_with_text_UeR6XQ"
+    "rich_text_3EMf4N",
+    "image_with_text_BE3gY7",
+    "image_with_text_qy8MkJ",
+    "image_with_text_pLDKGn",
+    "image_with_text_MDKgC6",
+    "image_with_text_TcFjtN",
+    "image_with_text_T43D3V",
+    "image_with_text_398C3m"
   ]
 }
