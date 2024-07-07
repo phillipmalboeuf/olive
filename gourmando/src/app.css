@@ -1,0 +1,9 @@
+body {
+
+}
+
+  .cursor {
+    height: 50vh;
+    background: grey;
+    margin-bottom: 20vh;
+  }

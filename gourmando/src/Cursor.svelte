@@ -1,0 +1,68 @@
+<script lang="ts">
+  import { onMount } from 'svelte'
+
+  import { on } from 'svelte/events'
+  import { fade } from 'svelte/transition'
+
+  let { src, element }: {
+    src: string
+    element: HTMLElement
+  } = $props()
+
+  let x: number = $state()
+  let y: number = $state()
+
+  onMount(() => {
+    element.style.cursor = "none"
+
+    const move = on(element, "mousemove", (e) => {
+      x = e.clientX
+      y = e.clientY
+    })
+
+    const leave = on(element, "mouseleave", (e) => {
+      x = undefined
+      y = undefined
+    })
+
+    return () => {
+      element.style.cursor = undefined
+      move()
+      leave()
+    }
+  })
+</script>
+
+<!-- <svelte:document on:mousemove={(e) => {
+  x = e.clientX
+  y = e.clientY
+}} /> -->
+
+{#if x}
+<figure transition:fade={{ duration: 333 }} style:left={`${x}px`} style:top={`${y}px`}>
+  <img {src} alt="Cursor" />
+</figure>
+{/if}
+
+<style>
+  figure {
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    z-index: 6666;
+    transform: translate(-50%, -50%);
+    transition: transform 666ms, opacity 666ms;
+    pointer-events: none;
+
+
+    /* &.hovering {
+      transform: translate(-50%, -50%) scale(0.88);
+      // border-radius: 25%;
+    } */
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+</style>
