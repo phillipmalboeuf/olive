@@ -1,9 +1,28 @@
 body {
-
+  margin: 0;
+  padding: 0;
 }
 
   .cursor {
     height: 50vh;
-    background: grey;
+    color: #A9452D;
+    background: #F7F2EA;
     margin-bottom: 20vh;
+  }
+
+  .cursor--full {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    /* padding: 40px; */
+  }
+
+  .cursor h1 {
+    font-size: 12vw;
+    line-height: 1;
+    margin: 0;
+  }
+
+  canvas {
+    border: none;
   }

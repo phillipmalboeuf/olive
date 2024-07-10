@@ -3,6 +3,7 @@
 
   import { on } from 'svelte/events'
   import { fade } from 'svelte/transition'
+  import { cursor } from './stores';
 
   let { src, element }: {
     src: string
@@ -11,18 +12,24 @@
 
   let x: number = $state()
   let y: number = $state()
+  let w: number = $state()
+  let h: number = $state()
 
   onMount(() => {
     element.style.cursor = "none"
 
-    const move = on(element, "mousemove", (e) => {
+    const move = on(element, "pointermove", (e) => {
       x = e.clientX
       y = e.clientY
+      
+      cursor.set({ x, y, w, h })
     })
 
-    const leave = on(element, "mouseleave", (e) => {
+    const leave = on(element, "pointerleave", (e) => {
       x = undefined
       y = undefined
+
+      cursor.set({ x, y, w, h })
     })
 
     return () => {
@@ -39,7 +46,7 @@
 }} /> -->
 
 {#if x}
-<figure transition:fade={{ duration: 333 }} style:left={`${x}px`} style:top={`${y}px`}>
+<figure transition:fade={{ duration: 333 }} style:left={`${x}px`} style:top={`${y}px`} bind:clientWidth={w} bind:clientHeight={h}>
   <img {src} alt="Cursor" />
 </figure>
 {/if}

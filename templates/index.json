@@ -15,6 +15,7 @@
         "heading_m7cAyp"
       ],
       "settings": {
+        "cursor": "shopify:\/\/shop_images\/Illustrations_Bonhomme-06_3.svg",
         "height": "full",
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -48,6 +49,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/DO01020542.jpg",
+        "cursor": "shopify:\/\/shop_images\/OG_handwriting7_1.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
