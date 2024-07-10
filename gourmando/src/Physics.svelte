@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte'
-  import { Body, Bodies, Composite, Engine, Events, Render, Runner, World } from 'matter-js'
+  import { Body, Bodies, Composite, Engine, Events, Render, Runner, World, Sleeping, Common } from 'matter-js'
 
   import { on } from 'svelte/events'
   import { cursor } from './stores'
@@ -16,6 +16,7 @@
   let ready = $state(false)
   let px = $state<number>()
   let py = $state<number>()
+  // let orientation = $state<number>()
 
   let engine: Engine
   let render: Render
@@ -167,6 +168,10 @@
       if (!value || !value.x || !px) return
       //@ts-ignore
       Body.setPosition(cursorBody, { x: px, y: py }, true)
+
+      boxes.forEach(box => {
+        Sleeping.set(box.body, false)
+      })
     })
 
     ready = true
@@ -230,9 +235,22 @@
   })
 </script>
 
-<!-- <svelte:document on:mousemove={(e) => {
-  x = e.clientX
-  y = e.clientY
+<!-- <svelte:window ondeviceorientation={(event) => {
+  orientation = event.gamma
+
+  if (orientation === 0) {
+      engine.gravity.x = Common.clamp(event.gamma, -90, 90) / 90;
+      engine.gravity.y = Common.clamp(event.beta, -90, 90) / 90;
+  } else if (orientation === 180) {
+      engine.gravity.x = Common.clamp(event.gamma, -90, 90) / 90;
+      engine.gravity.y = Common.clamp(-event.beta, -90, 90) / 90;
+  } else if (orientation === 90) {
+      engine.gravity.x = Common.clamp(event.beta, -90, 90) / 90;
+      engine.gravity.y = Common.clamp(-event.gamma, -90, 90) / 90;
+  } else if (orientation === -90) {
+      engine.gravity.x = Common.clamp(-event.beta, -90, 90) / 90;
+      engine.gravity.y = Common.clamp(event.gamma, -90, 90) / 90;
+  }
 }} /> -->
 
 <figure class:ready onpointermove={(e) => {
@@ -261,7 +279,9 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* opacity: 0; */
+
+    display: flex;
+    align-items: flex-end;
   }
 
   figure span {

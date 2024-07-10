@@ -18,14 +18,14 @@
   onMount(() => {
     element.style.cursor = "none"
 
-    const move = on(element, "pointermove", (e) => {
+    const move = on(element, "mousemove", (e) => {
       x = e.clientX
       y = e.clientY
       
       cursor.set({ x, y, w, h })
     })
 
-    const leave = on(element, "pointerleave", (e) => {
+    const leave = on(element, "mouseleave", (e) => {
       x = undefined
       y = undefined
 

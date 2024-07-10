@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'HAL Timezone';
 }
 
   .cursor {
@@ -11,7 +12,7 @@ body {
   }
 
   .cursor--full {
-    height: 100vh;
+    height: 100svh;
     display: flex;
     align-items: flex-end;
     /* padding: 40px; */
@@ -21,6 +22,7 @@ body {
     font-size: 12vw;
     line-height: 1;
     margin: 0;
+    font-family: 'HAL Timezone';
   }
 
   canvas {
