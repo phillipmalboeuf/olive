@@ -12,10 +12,11 @@ body {
   }
 
   .cursor--full {
+    box-sizing: border-box;
     height: 100svh;
     display: flex;
     align-items: flex-end;
-    /* padding: 40px; */
+    padding: 40px;
   }
 
   .cursor h1 {

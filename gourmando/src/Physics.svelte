@@ -23,6 +23,7 @@
   let runner: Runner
 
   let bounds = $derived(element.getBoundingClientRect())
+  const padding = 40
 
   // trimTop = 0
   // trimBottom = 0
@@ -123,19 +124,19 @@
       }
     })
 
-    const top = Bodies.rectangle(bounds.width / 2, -1, bounds.width, 1, {
+    const top = Bodies.rectangle(bounds.width / 2, -1, bounds.width, padding, {
       isStatic: true,
       friction: 0
     })
-    const right = Bodies.rectangle(bounds.width, bounds.height / 2, 1, bounds.height, {
+    const right = Bodies.rectangle(bounds.width, bounds.height / 2, padding, bounds.height, {
       isStatic: true,
       friction: 0
     })
-    const bottom = Bodies.rectangle(bounds.width / 2, bounds.height, bounds.width, 1, {
+    const bottom = Bodies.rectangle(bounds.width / 2, bounds.height, bounds.width, padding, {
       isStatic: true,
       friction: 0
     })
-    const left = Bodies.rectangle(-1, bounds.height / 2, 1, bounds.height, {
+    const left = Bodies.rectangle(-1, bounds.height / 2, padding, bounds.height, {
       isStatic: true,
       friction: 0
     })
@@ -282,6 +283,9 @@
 
     display: flex;
     align-items: flex-end;
+
+    box-sizing: border-box;
+    padding: 40px;
   }
 
   figure span {
