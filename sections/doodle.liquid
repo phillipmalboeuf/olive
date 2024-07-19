@@ -1,0 +1,57 @@
+<figure data-doodle="{{section.settings.doodle | image_url}}"
+  data-doodle-top="{{ section.settings.top }}"
+  data-doodle-left="{{ section.settings.left }}"
+  data-doodle-size="{{ section.settings.size }}"
+></figure>
+
+{% schema %}
+{
+  "name": "Doodle",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "doodle",
+      "label": "Doodle"
+    },
+    {
+      "type": "range",
+      "id": "top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "left",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Left",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "size",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Size",
+      "default": 30
+    },
+  ],
+  "presets": [
+    {
+      "name": "Doodle"
+    }
+  ]
+}
+{% endschema %}

@@ -23,7 +23,6 @@
   let runner: Runner
 
   let bounds = $derived(element.getBoundingClientRect())
-  const padding = 40
 
   // trimTop = 0
   // trimBottom = 0
@@ -37,8 +36,15 @@
     text.style.display = "none"
     element.style.position = "relative"
 
+    const style = getComputedStyle(element)
+    
+    const padding = Number(style.padding.replace('px', '')) || 10
+    console.log(style.padding, style.paddingTop, padding)
+
+    element.style.padding = "0"
+
     engine = Engine.create({
-      // enableSleeping: true
+      enableSleeping: true
     })
     render = !canvas ? undefined : Render.create({
       element,
@@ -124,24 +130,24 @@
       }
     })
 
-    const top = Bodies.rectangle(bounds.width / 2, -1, bounds.width, padding, {
+    const top = Bodies.rectangle(bounds.width / 2, -5000, bounds.width, padding + 10000, {
       isStatic: true,
       friction: 0
     })
-    const right = Bodies.rectangle(bounds.width, bounds.height / 2, padding, bounds.height, {
+    const right = Bodies.rectangle(bounds.width + 5000, bounds.height / 2, padding + 10000, bounds.height, {
       isStatic: true,
       friction: 0
     })
-    const bottom = Bodies.rectangle(bounds.width / 2, bounds.height, bounds.width, padding, {
+    const bottom = Bodies.rectangle(bounds.width / 2, bounds.height + 5000, bounds.width, padding + 10000, {
       isStatic: true,
       friction: 0
     })
-    const left = Bodies.rectangle(-1, bounds.height / 2, padding, bounds.height, {
+    const left = Bodies.rectangle(-5000, bounds.height / 2, padding + 10000, bounds.height, {
       isStatic: true,
       friction: 0
     })
 
-    const cursorBody = Bodies.rectangle(0, 0, 1, 1, {
+    const cursorBody = Bodies.circle(0, 0, 100, {
       isStatic: true,
       // density: 0.00001,
       slop: 0,
@@ -161,7 +167,7 @@
 
     const unsubscribe = cursor.subscribe((value) => {
       if (!value || !value.w) return
-      Body.scale(cursorBody, value.w, value.h)
+      Body.scale(cursorBody, value.w / 220, value.h / 220)
       unsubscribe()
     })
 
@@ -285,7 +291,7 @@
     align-items: flex-end;
 
     box-sizing: border-box;
-    padding: 40px;
+    /* padding: 40px; */
   }
 
   figure span {

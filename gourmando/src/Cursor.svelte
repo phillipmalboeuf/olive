@@ -3,50 +3,66 @@
 
   import { on } from 'svelte/events'
   import { fade } from 'svelte/transition'
-  import { cursor } from './stores';
+  import { cursor } from './stores'
 
   let { src, element }: {
     src: string
     element: HTMLElement
   } = $props()
 
+  let visible: boolean = $state(false)
   let x: number = $state()
   let y: number = $state()
   let w: number = $state()
   let h: number = $state()
 
+  function isTouchDevice() {
+    // @ts-ignore
+    return (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
+  }
+
   onMount(() => {
     element.style.cursor = "none"
 
-    const move = on(element, "mousemove", (e) => {
-      x = e.clientX
-      y = e.clientY
+    const enter = on(element, "mouseenter", (e) => {
+      visible = true
       
-      cursor.set({ x, y, w, h })
+      // cursor.set({ x, y, w, h })
     })
 
     const leave = on(element, "mouseleave", (e) => {
-      x = undefined
-      y = undefined
+      visible = false
+      // x = undefined
+      // y = undefined
 
-      cursor.set({ x, y, w, h })
+      // cursor.set({ x, y, w, h })
     })
 
     return () => {
       element.style.cursor = undefined
-      move()
+      enter()
       leave()
     }
   })
 </script>
+
+<svelte:document on:mousemove={(e) => {
+  if (isTouchDevice()) return
+  if (!visible) return
+
+  x = e.clientX
+  y = e.clientY
+
+  cursor.set({ x, y, w, h })
+}} />
 
 <!-- <svelte:document on:mousemove={(e) => {
   x = e.clientX
   y = e.clientY
 }} /> -->
 
-{#if x}
-<figure transition:fade={{ duration: 333 }} style:left={`${x}px`} style:top={`${y}px`} bind:clientWidth={w} bind:clientHeight={h}>
+{#if visible}
+<figure style:left={`${x}px`} style:top={`${y}px`} bind:clientWidth={w} bind:clientHeight={h}>
   <img {src} alt="Cursor" />
 </figure>
 {/if}

@@ -8,7 +8,7 @@ body {
     height: 50vh;
     color: #A9452D;
     background: #F7F2EA;
-    margin-bottom: 20vh;
+    /* margin-bottom: 20vh; */
   }
 
   .cursor--full {
@@ -20,7 +20,7 @@ body {
   }
 
   .cursor h1 {
-    font-size: 12vw;
+    font-size: 16vw;
     line-height: 1;
     margin: 0;
     font-family: 'HAL Timezone';
