@@ -2,14 +2,18 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    --padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-top: var(--padding-top);
+    --padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-bottom: var(--padding-bottom);
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      --padding-top: {{ section.settings.padding_top }}px;
+      padding-top: var(--padding-top);
+      --padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-bottom: var(--padding-bottom);
     }
   }
 {%- endstyle -%}
@@ -19,7 +23,7 @@
   if section.index == 1
     assign fetch_priority = 'high'
   endif
-  if section.settings.color_scheme == section.settings.section_color_scheme and section.settings.content_layout == 'no-overlap'
+  if section.settings.color_scheme == section.settings.section_color_scheme
     assign remove_color_classes = true
   endif
 -%}
@@ -29,6 +33,21 @@
   <div class="page-width">
     <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
+        {%- if section.settings.content_layout == 'split' -%}
+        <div class="image-with-text__text-item grid__item">
+          {%- for block in section.blocks -%}
+            {% case block.type %}
+              {%- when 'heading' -%}
+                <h2
+                  class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.heading  | replace: "\n", "<br>" }}
+                </h2>
+              {%- endcase -%}
+            {%- endfor -%}
+        </div>
+        {%- else -%}
         {%- if section.settings.image != blank -%}
         <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
           <div
@@ -62,20 +81,52 @@
           </div>
         </div>
         {%- endif -%}
+        {%- endif -%}
+
         <div class="image-with-text__text-item grid__item">
           <div
             id="ImageWithText--{{ section.id }}"
             class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
           >
+            {%- if section.settings.content_layout == 'split' -%}
+            {%- if section.settings.image != blank -%}
+            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings">
+            
+              
+              {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
+                {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                {%- capture sizes -%}
+              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+              (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+            {%- endcapture -%}
+              {%- else -%}
+                {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                {%- capture sizes -%}
+              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+            {%- endcapture -%}
+              {%- endif -%}
+              {{
+                section.settings.image
+                | image_url: width: 1500
+                | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+              }}
+            
+            </div>
+            {%- endif -%}
+            {%- endif -%}
+            
             {%- for block in section.blocks -%}
               {% case block.type %}
                 {%- when 'heading' -%}
+                  {%- if section.settings.content_layout != 'split' -%}
                   <h2
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.heading  | replace: "\n", "<br>" }}
                   </h2>
+                  {%- endif -%}
                 {%- when 'caption' -%}
                   <p
                     class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
@@ -237,15 +288,15 @@
       "id": "content_layout",
       "options": [
         {
-          "value": "no-overlap",
-          "label": "t:sections.image-with-text.settings.content_layout.options__1.label"
+          "value": "no-split",
+          "label": "No split"
         },
         {
-          "value": "overlap",
-          "label": "t:sections.image-with-text.settings.content_layout.options__2.label"
+          "value": "split",
+          "label": "Split"
         }
       ],
-      "default": "no-overlap",
+      "default": "no-split",
       "label": "t:sections.image-with-text.settings.content_layout.label"
     },
     {
@@ -456,7 +507,7 @@
     {
       "type": "button",
       "name": "t:sections.image-with-text.blocks.button.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "text",

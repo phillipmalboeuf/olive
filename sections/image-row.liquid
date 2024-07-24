@@ -28,7 +28,7 @@
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}"
   {% if section.settings.cursor %}data-cursor="{{section.settings.cursor | image_url}}"{% endif %}>
   <div class="page-width">
-    <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="image-row-section image-row-section--{{ section.settings.desktop_content_position }} image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       {% comment %} <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}"> {% endcomment %}
       <div>
         {% comment %} {%- if section.settings.image != blank -%}
@@ -89,7 +89,8 @@
           {%- endcase -%}
         {%- endfor -%}
 
-        <figure class="image-row-slider">
+        <figure class="image-row-row">
+            {%- assign width = '1500' -%}
             {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
                 {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
                 {%- capture sizes -%}
@@ -103,25 +104,74 @@
               (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
             {%- endcapture -%}
             {%- endif -%}
-          <ol class="image-row">
+          <ol class="image-row image-row--{{ section.settings.height }}">
             {%- if section.settings.image-1 != blank -%}
             <li>{{
               section.settings.image-1
-              | image_url: width: 1500
+              | image_url: width: width
               | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
             }}</li>
             {%- endif -%}
             {%- if section.settings.image-2 != blank -%}
             <li>{{
               section.settings.image-2
-              | image_url: width: 1500
+              | image_url: width: width
               | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
             }}</li>
             {%- endif -%}
             {%- if section.settings.image-3 != blank -%}
             <li>{{
-              section.settings.image-2
-              | image_url: width: 1500
+              section.settings.image-3
+              | image_url: width: width
+              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}</li>
+            {%- endif -%}
+            {%- if section.settings.image-4 != blank -%}
+            <li>{{
+              section.settings.image-4
+              | image_url: width: width
+              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}</li>
+            {%- endif -%}
+            {%- if section.settings.image-5 != blank -%}
+            <li>{{
+              section.settings.image-5
+              | image_url: width: width
+              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}</li>
+            {%- endif -%}
+            {%- if section.settings.image-6 != blank -%}
+            <li>{{
+              section.settings.image-6
+              | image_url: width: width
+              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}</li>
+            {%- endif -%}
+            {%- if section.settings.image-7 != blank -%}
+            <li>{{
+              section.settings.image-7
+              | image_url: width: width
+              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}</li>
+            {%- endif -%}
+            {%- if section.settings.image-8 != blank -%}
+            <li>{{
+              section.settings.image-8
+              | image_url: width: width
+              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}</li>
+            {%- endif -%}
+            {%- if section.settings.image-9 != blank -%}
+            <li>{{
+              section.settings.image-9
+              | image_url: width: width
+              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}</li>
+            {%- endif -%}
+            {%- if section.settings.image-10 != blank -%}
+            <li>{{
+              section.settings.image-10
+              | image_url: width: width
               | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
             }}</li>
             {%- endif -%}

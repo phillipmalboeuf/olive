@@ -21,12 +21,23 @@
 }
 
 .newsletter-form__field-wrapper .field__input {
-  padding-right: 5rem;
+  /* padding-right: 5rem; */
   width: 100%;
+  border-collapse: collapse;
+  padding: 40px;
+  height: auto;
+}
+
+.newsletter-form__field-wrapper .field__label {
+  left: calc(var(--inputs-border-width) + 40px)
 }
 
 .newsletter-form__field-wrapper .field {
   z-index: 0;
+}
+
+.newsletter-form__field-wrapper .field:has(button) {
+  padding: 40px;
 }
 
 .newsletter-form__message {

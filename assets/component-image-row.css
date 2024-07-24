@@ -1,5 +1,6 @@
-.image-row-slider {
-  margin: 0;
+.image-row-row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .image-row {
@@ -16,5 +17,36 @@
 
   .image-row li img {
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    transition: transform 666ms;
   }
+
+  .image-row li img:hover {
+    transform: translateY(-10%) rotate(-4deg);
+  }
+
+.image-row--small img {
+  height: 35lvh;
+}
+
+.image-row--medium img {
+  height: 50lvh;
+}
+
+.image-row--large img {
+  height: 100lvh;
+}
+
+/* @media screen and (min-width: 750px) {
+  .image-row--small img {
+    height: 31.4rem;
+  }
+
+  .image-row--medium img {
+    height: 46rem;
+  }
+
+  .image-row--large img {
+    height: 69.5rem;
+  }
+} */

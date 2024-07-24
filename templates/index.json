@@ -15,12 +15,48 @@
         "heading_m7cAyp"
       ],
       "settings": {
-        "cursor": "shopify:\/\/shop_images\/Illustrations_Bonhomme-06_3.svg",
+        "cursor": "shopify:\/\/shop_images\/cursor.svg",
         "height": "full",
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_row_cxG977": {
+      "type": "image-row",
+      "blocks": {
+        "heading_qLbrVq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Une cuisine sincère, faite maison depuis 1998.",
+            "heading_size": "h0"
+          }
+        },
+        "text_PxAL6F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Depuis plus de 25 ans, on nourrit notre fidèle clientèle et les touristes qui arpentent les rues du Vieux-Montréal dans notre boulangerie-café-restaurant de la rue Saint-Paul. On se démène, on travaille fort (et on s’amuse) sept jours sur sept, pour transformer l’ordinaire en extraordinaire pour toutes les personnes qui passent le pas de notre porte. La preuve? La file d’attente quotidienne en dit long sur la réputation de notre établissement!<\/p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qLbrVq",
+        "text_PxAL6F"
+      ],
+      "settings": {
+        "image-1": "shopify:\/\/shop_images\/L1050668.jpg",
+        "image-2": "shopify:\/\/shop_images\/L1040468.jpg",
+        "cursor": "shopify:\/\/shop_images\/cursor_2.svg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "section_color_scheme": "inverse",
+        "mobile_content_alignment": "left",
         "padding_top": 40,
         "padding_bottom": 40
       }
@@ -47,6 +83,7 @@
         "heading_HEtPRf",
         "text_Ukaiin"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/DO01020542.jpg",
         "cursor": "shopify:\/\/shop_images\/OG_handwriting7_1.svg",
@@ -96,16 +133,65 @@
         "button_UFnHDG"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/L2050890-3.jpg",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/L1050004.jpg",
+        "cursor": "shopify:\/\/shop_images\/cursor_3.svg",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "content_layout": "split",
         "section_color_scheme": "accent-1",
         "color_scheme": "accent-1",
         "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "doodle_mMbtGp": {
+      "type": "doodle",
+      "settings": {
+        "doodle": "shopify:\/\/shop_images\/doodle.svg",
+        "top": 50,
+        "left": 25,
+        "size": 30
+      }
+    },
+    "image_row_dF4m8L": {
+      "type": "image-row",
+      "blocks": {
+        "heading_RjLHdL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Un p’tit aperçu de ce qui vous attend si vous passez nous voir la bette.",
+            "heading_size": "h0"
+          }
+        },
+        "text_KwUP4r": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*Notre cuisine est saisonnière et varie selon les arrivages et l’inspiration de nos équipes en cuisine.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RjLHdL",
+        "text_KwUP4r"
+      ],
+      "settings": {
+        "image-1": "shopify:\/\/shop_images\/L1030874.jpg",
+        "image-2": "shopify:\/\/shop_images\/L1060189-2.jpg",
+        "image-3": "shopify:\/\/shop_images\/L1150954.jpg",
+        "image-4": "shopify:\/\/shop_images\/L1040843.jpg",
+        "image-5": "shopify:\/\/shop_images\/L1080022.jpg",
+        "cursor": "shopify:\/\/shop_images\/cursor_4.svg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "section_color_scheme": "background-2",
         "mobile_content_alignment": "left",
         "padding_top": 40,
         "padding_bottom": 40
@@ -133,8 +219,10 @@
         "heading_9jEnnb",
         "text_JFG9UV"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/2-og_364.jpg",
+        "cursor": "shopify:\/\/shop_images\/cursor_4.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -166,15 +254,25 @@
             "button_link": "shopify:\/\/pages\/menu",
             "button_style_secondary": true
           }
+        },
+        "button_XNHaHa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Menu Royalmount",
+            "button_link": "shopify:\/\/pages\/menu",
+            "button_style_secondary": true
+          }
         }
       },
       "block_order": [
         "heading_jYNHzM",
-        "button_Cbj9Xj"
+        "button_Cbj9Xj",
+        "button_XNHaHa"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/L1110163.jpg",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/L1060389.jpg",
+        "cursor": "shopify:\/\/shop_images\/cursor_5.svg",
+        "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
@@ -201,7 +299,7 @@
         "text_WtfgzN": {
           "type": "text",
           "settings": {
-            "text": "<p>Vous n’avez qu’à commander en ligne vos plats favoris et planifier votre heure de ramassage ou de livraison. On s’occupe du reste.<\/p>",
+            "text": "<p>Vous n’avez qu’à commander en ligne vos plats favoris et planifier votre heure de ramassage ou de livraison. On s’occupe du reste. Easy, breezy, merci, bonsoir.<\/p>",
             "text_style": "subtitle"
           }
         },
@@ -220,6 +318,7 @@
         "button_rEgUUt"
       ],
       "settings": {
+        "cursor": "shopify:\/\/shop_images\/cursor_6.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -267,10 +366,11 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/L1070577.jpg",
+        "cursor": "shopify:\/\/shop_images\/cursor_7.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
@@ -313,14 +413,15 @@
         "button_7GGXBb"
       ],
       "settings": {
+        "cursor": "shopify:\/\/shop_images\/cursor_8.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "accent-1",
+        "color_scheme": "accent-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -330,8 +431,11 @@
   },
   "order": [
     "rich_text_3EMf4N",
+    "image_row_cxG977",
     "image_with_text_BE3gY7",
     "image_with_text_qy8MkJ",
+    "doodle_mMbtGp",
+    "image_row_dF4m8L",
     "image_with_text_pLDKGn",
     "image_with_text_MDKgC6",
     "image_with_text_TcFjtN",

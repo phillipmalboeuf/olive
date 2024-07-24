@@ -17,19 +17,32 @@
   overflow: visible;
 }
 
+.image-row-section--bottom > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-row-section--bottom .image-row-row {
+  order: -1;
+}
+
+.image-row-section--bottom .image-with-text__heading {
+  order: -2;
+}
+
 .image-with-text__media--small {
-  height: 19.4rem;
+  height: 33lvh;
 }
 
 .image-with-text__media--medium {
-  height: 29.6rem;
+  height: 50lvh;
 }
 
 .image-with-text__media--large {
-  height: 43.5rem;
+  height: 100lvh;
 }
 
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
   .image-with-text__media--small {
     height: 31.4rem;
   }
@@ -41,11 +54,11 @@
   .image-with-text__media--large {
     height: 69.5rem;
   }
-}
+} */
 
 .image-with-text__media--placeholder {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .image-with-text__media--placeholder:after {
@@ -84,13 +97,15 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; */
   justify-content: center;
   align-self: center;
-  padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
+  padding: 0 var(--padding-top);
   position: relative;
   z-index: 1;
 }
+
+.image-with-text .grid__item {}
 
 .image-with-text .grid__item::after {
   content: '';
@@ -100,6 +115,51 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+  .image-with-text__media {
+    border: none;
+  }
+
+  .image-with-text__content .image-with-text__media {
+    margin: calc(var(--padding-top) * -1) calc((var(--padding-top) * -1) - 20px) 20px calc((var(--padding-top) * -1));
+    width: calc(100% + var(--padding-top) + 20px);
+  }
+
+  .image-with-text__content .image-with-text__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+@media screen and (min-width: 750px) {
+  .image-with-text--split .image-with-text__content:before {
+    content: "";
+    position: absolute;
+    top: calc(var(--padding-top) * -1);
+    bottom: calc(var(--padding-top) * -1);
+    width: 1px;
+    background: currentColor;
+    left: -1px;
+  }
+
+  .image-with-text__grid:not(.image-with-text__grid--reverse) .image-with-text__media-item {
+    margin: calc(var(--padding-top) * -1) 0 calc(var(--padding-bottom) * -1);
+    border-right: 1px solid;
+  }
+
+    .image-with-text__grid:not(.image-with-text__grid--reverse) .image-with-text__media-item .image-with-text__media {
+      margin-left: -20px;
+    }
+
+  .image-with-text__grid--reverse .image-with-text__media-item {
+    margin: calc(var(--padding-top) * -1) 0 calc(var(--padding-bottom) * -1);
+    border-left: 1px solid;
+  }
+
+    .image-with-text__grid--reverse .image-with-text__media-item .image-with-text__media {
+      margin-right: -20px;
+    }
 }
 
 .image-with-text:not(.image-with-text--overlap) .image-with-text__media-item:after {
@@ -116,18 +176,18 @@
 
 .image-with-text .image-with-text__media-item > * {
   border-radius: var(--media-radius);
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
     rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
-.image-with-text .global-media-settings {
+/* .image-with-text .global-media-settings {
   overflow: hidden !important;
-}
+} */
 
 .image-with-text .image-with-text__text-item > * {
   border-radius: var(--text-boxes-radius);
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
     var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
 }
@@ -180,6 +240,10 @@
   .image-with-text__content--bottom {
     justify-content: flex-end;
     align-self: flex-end;
+  }
+
+  .image-with-text__content--top:not(:has(.image-with-text__media)) {
+    height: 100%;
   }
 
   .image-with-text__content--top {
@@ -332,7 +396,7 @@
 
 @media screen and (min-width: 990px) {
   .image-with-text__content {
-    padding: 6rem 7rem 7rem;
+    /* padding: 6rem 7rem 7rem; */
   }
 }
 
@@ -359,11 +423,16 @@
   margin-top: 2rem;
 }
 
+.image-with-text__content .image-with-text__heading + .button {
+  margin-top: auto;
+}
+
 .image-with-text__content .image-with-text__text + .button {
   margin-top: 3rem;
 }
 
 .image-with-text__heading {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
