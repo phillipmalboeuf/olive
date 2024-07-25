@@ -32,7 +32,7 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-              {{ block.settings.heading }}
+              {{ block.settings.heading | replace: "\n", "<br>" }}
             </h2>
           {%- when 'paragraph' -%}
             <div

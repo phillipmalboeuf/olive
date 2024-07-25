@@ -14,7 +14,7 @@
 
 
   onMount(() => {
-   
+   element.style.position = 'relative'
   })
 </script>
 
@@ -24,6 +24,7 @@
 
 <style>
   figure {
+    pointer-events: none;
     position: absolute;
     margin: 0;
     padding: 0;

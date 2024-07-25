@@ -17,8 +17,7 @@ document.querySelectorAll<HTMLElement>('[data-cursor]').forEach(target => {
 })
 
 document.querySelectorAll<HTMLElement>('[data-doodle]').forEach(target => {
-  const sibling = target.parentElement.previousSibling.previousSibling
-  console.log(sibling)
+  const sibling = target.parentElement.nextElementSibling
   mount(Doodle, {
     target: sibling as HTMLElement,
     props: {
