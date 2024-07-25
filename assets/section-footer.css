@@ -34,6 +34,11 @@
 }
 
 @media screen and (min-width: 750px) {
+  .footer__content-top {
+    padding-left: var(--padding-top);
+    padding-right: var(--padding-top);
+  }
+
   .footer__content-top .grid {
     row-gap: 6rem;
     margin-bottom: 0;
@@ -152,12 +157,12 @@
 .footer-block__heading {
   margin-bottom: 2rem;
   margin-top: 0;
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
+  /* font-size: calc(var(--font-heading-scale) * 1.6rem); */
 }
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
-    font-size: calc(var(--font-heading-scale) * 1.8rem);
+    /* font-size: calc(var(--font-heading-scale) * 1.8rem); */
   }
 }
 
@@ -314,6 +319,7 @@
 
 .footer-block__details-content {
   margin-bottom: 4rem;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 750px) {

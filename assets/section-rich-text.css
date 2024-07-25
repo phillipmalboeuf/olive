@@ -18,7 +18,8 @@
 }
 
   .rich-text__wrapper--full,
-  .rich-text__wrapper--mid {
+  .rich-text__wrapper--mid,
+  .rich-text__wrapper--Mid {
     align-items: flex-end;
   }
 
@@ -26,8 +27,9 @@
     min-height: calc(100vh - 165px);
   }
 
-  .rich-text__wrapper--mid {
-    min-height: 50vh;
+  .rich-text__wrapper--mid,
+  .rich-text__wrapper--Mid {
+    min-height: 60vh;
   }
 
 @media screen and (min-width: 750px) {

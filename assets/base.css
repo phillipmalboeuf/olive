@@ -107,8 +107,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .header.page-width,
   .utility-bar__grid.page-width {
-    padding-left: 40px;
-    padding-right: 40px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
   }
 
   .page-width--narrow {
@@ -305,6 +305,10 @@ h5,
 h1,
 .h1 {
   font-size: calc(var(--font-heading-scale) * 3rem);
+}
+
+.h--alt {
+  font-family: var(--font-body-family);
 }
 
 @media only screen and (min-width: 750px) {
@@ -1877,7 +1881,7 @@ input[type='checkbox'] {
   position: relative;
   width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
-  border-radius: var(--inputs-radius);
+  border-radius: var(--buttons-radius);
   min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
 }
 
@@ -1890,7 +1894,7 @@ input[type='checkbox'] {
   bottom: var(--inputs-border-width);
   left: var(--inputs-border-width);
   border: 0.1rem solid transparent;
-  border-radius: var(--inputs-radius);
+  border-radius: var(--buttons-radius);
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
@@ -2454,7 +2458,7 @@ input[type='checkbox'] {
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
   text-decoration: none;
   word-break: break-word;
 }
@@ -2925,9 +2929,10 @@ details-disclosure > details {
   border-radius: var(--badge-corner-radius);
   display: inline-block;
   font-size: 1.6rem;
-  /* letter-spacing: 0.1rem; */
+  font-family: var(--font-heading-family);
+  letter-spacing: 0.1rem;
   line-height: 1;
-  padding: 0.5rem 1.3rem 0.6rem 1.3rem;
+  padding: 0.6rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
   background-color: rgb(var(--color-badge-background));
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));

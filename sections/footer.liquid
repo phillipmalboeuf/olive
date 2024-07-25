@@ -11,8 +11,10 @@
   }
 
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    --padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-top: var(--padding-top);
+    --padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-bottom: var(--padding-bottom);
   }
 
   @media screen and (min-width: 750px) {
@@ -21,13 +23,15 @@
     }
 
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      --padding-top: {{ section.settings.padding_top }}px;
+      padding-top: var(--padding-top);
+      --padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-bottom: var(--padding-bottom);
     }
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding" {% if section.settings.cursor %}data-cursor="{{section.settings.cursor | image_url}}"{% endif %}>
   {%- liquid
     assign has_social_icons = true
     if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -430,6 +434,11 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "cursor",
+      "label": "Cursor"
     },
     {
       "type": "header",

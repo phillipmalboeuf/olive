@@ -123,7 +123,7 @@
 
   .image-with-text__content .image-with-text__media {
     margin: calc(var(--padding-top) * -1) calc((var(--padding-top) * -1) - 20px) 20px calc((var(--padding-top) * -1));
-    width: calc(100% + var(--padding-top) + 20px);
+    width: calc(100% + var(--padding-top) + 60px);
   }
 
   .image-with-text__content .image-with-text__media img {
