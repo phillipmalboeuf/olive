@@ -38,9 +38,7 @@
 
     const style = getComputedStyle(element)
     
-    const padding = Number(style.padding.replace('px', '')) || 10
-    console.log(style.padding, style.paddingTop, padding)
-
+    const padding = Number(style.padding.replace('px', '')) || 40
     element.style.padding = "0"
 
     engine = Engine.create({
@@ -99,7 +97,7 @@
         descending,
         ...{x, y, w, h},
         adjustX: span.offsetWidth / 2,
-        adjustY: (span.offsetHeight * 1.1
+        adjustY: (span.offsetHeight
           // * (ascending ? (1 - trimBottom) : 1)
           // * (descending ? (1 + trimBottom) : 1)
           / 2),
@@ -130,19 +128,21 @@
       }
     })
 
-    const top = Bodies.rectangle(bounds.width / 2, -5000, bounds.width, padding + 10000, {
+    const overpad = 5000
+
+    const top = Bodies.rectangle(bounds.width / 2, -overpad, bounds.width, padding + (overpad * 2), {
       isStatic: true,
       friction: 0
     })
-    const right = Bodies.rectangle(bounds.width + 5000, bounds.height / 2, padding + 10000, bounds.height, {
+    const right = Bodies.rectangle(bounds.width + overpad, bounds.height / 2, padding + (overpad * 2), bounds.height, {
       isStatic: true,
       friction: 0
     })
-    const bottom = Bodies.rectangle(bounds.width / 2, bounds.height + 5000, bounds.width, padding + 10000, {
+    const bottom = Bodies.rectangle(bounds.width / 2, bounds.height + overpad, bounds.width, padding + (overpad * 2), {
       isStatic: true,
       friction: 0
     })
-    const left = Bodies.rectangle(-5000, bounds.height / 2, padding + 10000, bounds.height, {
+    const left = Bodies.rectangle(-overpad, bounds.height / 2, padding + (overpad * 2), bounds.height, {
       isStatic: true,
       friction: 0
     })
@@ -264,10 +264,10 @@
   px = e.layerX
   py = e.layerY
 }}>
-  <svelte:element this={text.tagName} bind:this={splitElement}>
-    {#each text.innerHTML.split('<br>') as t, i}
+  <svelte:element this={text.tagName} class={text.className} bind:this={splitElement}>
+    {#each text.innerHTML.trim().split('<br>') as t, i}
       {#if i !== 0}<br>{/if}
-      {#each t as l}<span>{l}</span>{/each}
+      {#each Array.from(t).filter((l, j) => j<12) as l}<span>{l}</span>{/each}
     {/each}
   </svelte:element>
   <!-- <h1>{@html text.innerHTML}</h1> -->
@@ -292,6 +292,10 @@
 
     box-sizing: border-box;
     /* padding: 40px; */
+  }
+
+  figure > :global(*) {
+    line-height: 1;
   }
 
   figure span {

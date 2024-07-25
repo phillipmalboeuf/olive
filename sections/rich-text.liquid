@@ -14,17 +14,21 @@
   }
 {%- endstyle -%}
 
-<div class="{% unless section.settings.full_width %} page-width{% endunless %}"
-  {% if section.settings.cursor %}data-cursor="{{section.settings.cursor | image_url}}"{% endif %}>
-  <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+<div class="{% unless section.settings.full_width %} page-width{% endunless %} color-{{ section.settings.color_scheme }}"
+  {%- for block in section.blocks -%}{%- case block.type -%}{%- when 'heading' -%}{% if block.settings.physics %}
+ data-physics{% endif %}{%- endcase -%}{%- endfor -%} {% if section.settings.cursor %} data-cursor="{{section.settings.cursor | image_url}}"{% endif %}>
+  <div class="rich-text content-container gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %} rich-text__wrapper--{{ section.settings.height }}">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
               <h2
-                class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}"
                 {{ block.shopify_attributes }}
+                {% if block.settings.physics %}
+                data-physics-text
+                {% endif %}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
@@ -218,6 +222,12 @@
           "id": "heading",
           "default": "t:sections.rich-text.blocks.heading.settings.heading.default",
           "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "physics",
+          "default": false,
+          "label": "Physics"
         },
         {
           "type": "select",
