@@ -38,7 +38,7 @@
 
     const style = getComputedStyle(element)
     
-    const padding = Number(style.padding.replace('px', '')) || 40
+    const padding = Number(style.padding.replace('px', '')) || 60
     element.style.padding = "0"
 
     engine = Engine.create({
