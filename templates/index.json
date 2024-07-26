@@ -7,6 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "olive\\n+gourmando",
+            "physics": true,
             "heading_size": "hxxl"
           }
         }
@@ -25,13 +26,22 @@
         "padding_bottom": 40
       }
     },
+    "doodle_UcMmch": {
+      "type": "doodle",
+      "settings": {
+        "doodle": "shopify:\/\/shop_images\/doodle_8.svg",
+        "top": 65,
+        "left": 5,
+        "size": 10
+      }
+    },
     "image_row_cxG977": {
       "type": "image-row",
       "blocks": {
         "heading_qLbrVq": {
           "type": "heading",
           "settings": {
-            "heading": "Une cuisine sincère, faite maison depuis 1998.",
+            "heading": "Une cuisine sincère,\\nfaite maison depuis 1998.",
             "heading_size": "h0"
           }
         },
@@ -61,44 +71,13 @@
         "padding_bottom": 40
       }
     },
-    "image_with_text_BE3gY7": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_HEtPRf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Une cuisine sincère, faite maison depuis 1998.",
-            "heading_size": "h0"
-          }
-        },
-        "text_Ukaiin": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Depuis plus de 25 ans, on nourrit notre fidèle clientèle et les touristes qui arpentent les rues du Vieux-Montréal dans notre boulangerie-café-restaurant de la rue Saint-Paul. On se démène, on travaille fort (et on s’amuse) sept jours sur sept, pour transformer l’ordinaire en extraordinaire pour toutes les personnes qui passent le pas de notre porte. La preuve? La file d’attente quotidienne en dit long sur la réputation de notre établissement!<\/p>",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_HEtPRf",
-        "text_Ukaiin"
-      ],
-      "disabled": true,
+    "doodle_VXMV7W": {
+      "type": "doodle",
       "settings": {
-        "image": "shopify:\/\/shop_images\/DO01020542.jpg",
-        "cursor": "shopify:\/\/shop_images\/OG_handwriting7_1.svg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "inverse",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "doodle": "shopify:\/\/shop_images\/doodle_6.svg",
+        "top": 60,
+        "left": 25,
+        "size": 35
       }
     },
     "image_with_text_qy8MkJ": {
@@ -107,7 +86,7 @@
         "heading_pNhqpT": {
           "type": "heading",
           "settings": {
-            "heading": "Maintenant au Royalmount",
+            "heading": "Maintenant\\nau Royalmount",
             "heading_size": "h0"
           }
         },
@@ -152,10 +131,10 @@
     "doodle_mMbtGp": {
       "type": "doodle",
       "settings": {
-        "doodle": "shopify:\/\/shop_images\/doodle.svg",
-        "top": 50,
-        "left": 25,
-        "size": 30
+        "doodle": "shopify:\/\/shop_images\/doodle_5.svg",
+        "top": 40,
+        "left": 80,
+        "size": 25
       }
     },
     "image_row_dF4m8L": {
@@ -197,44 +176,13 @@
         "padding_bottom": 40
       }
     },
-    "image_with_text_pLDKGn": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_9jEnnb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Un p’tit aperçu de ce qui vous attend si vous passez nous voir la bette.",
-            "heading_size": "hxl"
-          }
-        },
-        "text_JFG9UV": {
-          "type": "text",
-          "settings": {
-            "text": "<p>*Notre cuisine est saisonnière et varie selon les arrivages et l’inspiration de nos équipes en cuisine.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9jEnnb",
-        "text_JFG9UV"
-      ],
-      "disabled": true,
+    "doodle_zd4QKe": {
+      "type": "doodle",
       "settings": {
-        "image": "shopify:\/\/shop_images\/2-og_364.jpg",
-        "cursor": "shopify:\/\/shop_images\/cursor_4.svg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "background-2",
-        "color_scheme": "background-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "doodle": "shopify:\/\/shop_images\/doodle_4.svg",
+        "top": 70,
+        "left": 25,
+        "size": 20
       }
     },
     "image_with_text_MDKgC6": {
@@ -243,7 +191,7 @@
         "heading_jYNHzM": {
           "type": "heading",
           "settings": {
-            "heading": "Don’t worry. Nos fameux classiques sont toujours au menu!",
+            "heading": "Don’t worry. Nos FA-MEUX classiques sont toujours au menu!",
             "heading_size": "h0"
           }
         },
@@ -324,13 +272,22 @@
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "content_layout": "split",
         "section_color_scheme": "accent-2",
         "color_scheme": "accent-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "doodle_dqtfCx": {
+      "type": "doodle",
+      "settings": {
+        "doodle": "shopify:\/\/shop_images\/doodle_3.svg",
+        "top": 50,
+        "left": 90,
+        "size": 20
       }
     },
     "image_with_text_T43D3V": {
@@ -419,7 +376,7 @@
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "content_layout": "split",
         "section_color_scheme": "accent-1",
         "color_scheme": "accent-1",
         "image_behavior": "none",
@@ -431,14 +388,16 @@
   },
   "order": [
     "rich_text_3EMf4N",
+    "doodle_UcMmch",
     "image_row_cxG977",
-    "image_with_text_BE3gY7",
+    "doodle_VXMV7W",
     "image_with_text_qy8MkJ",
     "doodle_mMbtGp",
     "image_row_dF4m8L",
-    "image_with_text_pLDKGn",
+    "doodle_zd4QKe",
     "image_with_text_MDKgC6",
     "image_with_text_TcFjtN",
+    "doodle_dqtfCx",
     "image_with_text_T43D3V",
     "image_with_text_398C3m"
   ]

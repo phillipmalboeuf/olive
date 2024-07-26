@@ -38,7 +38,7 @@
 
     const style = getComputedStyle(element)
     
-    const padding = Number(style.padding.replace('px', '')) || 60
+    const padding = 40
     element.style.padding = "0"
 
     engine = Engine.create({
@@ -296,6 +296,7 @@
 
   figure > :global(*) {
     line-height: 1;
+    margin: 0;
   }
 
   figure span {

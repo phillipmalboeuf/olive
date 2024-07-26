@@ -4,15 +4,15 @@
 }
 
 .newsletter__wrapper {
-  padding-right: calc(4rem / var(--font-body-scale));
-  padding-left: calc(4rem / var(--font-body-scale));
+  padding-right: var(--padding-top);
+  padding-left: var(--padding-top);
   border-right: 1px solid;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   .newsletter__wrapper {
-    /* padding-right: 9rem;
-    padding-left: 9rem; */
+    border-right: none;
+    border-bottom: 1px solid;
   }
 }
 

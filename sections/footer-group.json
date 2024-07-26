@@ -2,13 +2,22 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "doodle_GNyXha": {
+      "type": "doodle",
+      "settings": {
+        "doodle": "shopify:\/\/shop_images\/doodle_2.svg",
+        "top": 0,
+        "left": 40,
+        "size": 5
+      }
+    },
     "newsletter_mzbtjG": {
       "type": "newsletter",
       "blocks": {
         "heading_nzW8JN": {
           "type": "heading",
           "settings": {
-            "heading": "On s’aime un peu, beaucoup, \u2028à la folie?",
+            "heading": "On s’aime un peu, beaucoup,\\n\u2028à la folie?",
             "heading_size": "h2"
           }
         },
@@ -41,17 +50,51 @@
       "blocks": {
         "e39a33c7-0a4c-4789-a944-abcdc890791d": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "",
             "menu": "footer"
           }
+        },
+        "text_h8yhyk": {
+          "type": "text",
+          "settings": {
+            "heading": "Vieux-Montréal",
+            "subtext": "<p>Ouvert 7\/7<br\/>9 h – 17 h<\/p><p>351, rue Saint-Paul O.<br\/>Montréal QC H2Y 2A7<br\/>514 350-1083<\/p>"
+          }
+        },
+        "text_9kDzaP": {
+          "type": "text",
+          "settings": {
+            "heading": "Royalmount",
+            "subtext": "<p>Ouvert 7\/7<br\/>11 h – 21 h<\/p><p>123, av. Royalmount<br\/>\u2028Montréal QC H2Y 2A7<br\/>514 123-4567<\/p>"
+          }
+        },
+        "text_wVMnBj": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": ""
+          }
+        },
+        "text_Bk6afM": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": ""
+          }
         }
       },
       "block_order": [
-        "e39a33c7-0a4c-4789-a944-abcdc890791d"
+        "e39a33c7-0a4c-4789-a944-abcdc890791d",
+        "text_h8yhyk",
+        "text_9kDzaP",
+        "text_wVMnBj",
+        "text_Bk6afM"
       ],
       "settings": {
         "color_scheme": "inverse",
+        "cursor": "shopify:\/\/shop_images\/cursor_9.svg",
         "newsletter_enable": false,
         "newsletter_heading": "Inscrivez-vous à notre infolettre!",
         "enable_follow_on_shop": false,
@@ -61,13 +104,51 @@
         "payment_enable": false,
         "show_policy": false,
         "margin_top": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "doodle_X8LUeG": {
+      "type": "doodle",
+      "settings": {
+        "doodle": "shopify:\/\/shop_images\/doodle_1.svg",
+        "top": 0,
+        "left": 80,
+        "size": 30
+      }
+    },
+    "rich_text_bemCzE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_krtFtj": {
+          "type": "heading",
+          "settings": {
+            "heading": "olive\\n+gourmando",
+            "physics": true,
+            "heading_size": "hxxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_krtFtj"
+      ],
+      "settings": {
+        "cursor": "shopify:\/\/shop_images\/cursor_9.svg",
+        "height": "Mid",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     }
   },
   "order": [
+    "doodle_GNyXha",
     "newsletter_mzbtjG",
-    "footer"
+    "footer",
+    "doodle_X8LUeG",
+    "rich_text_bemCzE"
   ]
 }

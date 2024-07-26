@@ -31,6 +31,12 @@
     transform: translate(-50%, -50%);
   }
 
+  @media screen and (max-width: 750px) {
+    figure {
+      display: none;
+    }
+  }
+
   img {
     width: 100%;
     height: auto;    

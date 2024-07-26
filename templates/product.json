@@ -7,7 +7,7 @@
           "type": "text",
           "settings": {
             "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "text_style": "body"
           }
         },
         "title": {
@@ -64,7 +64,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
