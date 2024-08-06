@@ -26,15 +26,6 @@
         "padding_bottom": 40
       }
     },
-    "doodle_UcMmch": {
-      "type": "doodle",
-      "settings": {
-        "doodle": "shopify:\/\/shop_images\/doodle_8.svg",
-        "top": 65,
-        "left": 5,
-        "size": 10
-      }
-    },
     "image_row_cxG977": {
       "type": "image-row",
       "blocks": {
@@ -93,12 +84,13 @@
         "text_6rdi8f": {
           "type": "text",
           "settings": {
-            "text": "<h3>La famille s’agrandît<\/h3><p>On prend place dans le tout nouveau, tout beau centre Royalmount, pour se rapprocher des gens pour qui le Vieux-Montréal est juste un peu trop loin. Promis, on y retrouve la même ambiance chaleureuse et les mêmes classiques qu’à notre resto de la rue Saint-Paul, mais avec une petite twist bien spéciale comme on y sert aussi une cuisine de soir.<\/p>",
+            "text": "<h3>Notre p'tit dernier<\/h3><p>On prend place dans le tout nouveau, tout beau centre Royalmount, pour se rapprocher des gens pour qui le Vieux-Montréal est juste un peu trop loin. Promis, on y retrouve la même ambiance chaleureuse et les mêmes classiques qu’à notre resto de la rue Saint-Paul, mais avec une petite twist bien spéciale comme on y sert aussi une cuisine de soir.<\/p>",
             "text_style": "body"
           }
         },
         "button_UFnHDG": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Voir le menu",
             "button_link": "shopify:\/\/pages\/menu",
@@ -128,70 +120,13 @@
         "padding_bottom": 40
       }
     },
-    "doodle_mMbtGp": {
-      "type": "doodle",
-      "settings": {
-        "doodle": "shopify:\/\/shop_images\/doodle_5.svg",
-        "top": 40,
-        "left": 80,
-        "size": 25
-      }
-    },
-    "image_row_dF4m8L": {
-      "type": "image-row",
-      "blocks": {
-        "heading_RjLHdL": {
-          "type": "heading",
-          "settings": {
-            "heading": "Un p’tit aperçu de ce qui vous attend si vous passez nous voir la bette.",
-            "heading_size": "h0"
-          }
-        },
-        "text_KwUP4r": {
-          "type": "text",
-          "settings": {
-            "text": "<p>*Notre cuisine est saisonnière et varie selon les arrivages et l’inspiration de nos équipes en cuisine.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_RjLHdL",
-        "text_KwUP4r"
-      ],
-      "settings": {
-        "image-1": "shopify:\/\/shop_images\/L1030874.jpg",
-        "image-2": "shopify:\/\/shop_images\/L1060189-2.jpg",
-        "image-3": "shopify:\/\/shop_images\/L1150954.jpg",
-        "image-4": "shopify:\/\/shop_images\/L1040843.jpg",
-        "image-5": "shopify:\/\/shop_images\/L1080022.jpg",
-        "cursor": "shopify:\/\/shop_images\/cursor_4.svg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "desktop_content_position": "bottom",
-        "desktop_content_alignment": "left",
-        "section_color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "doodle_zd4QKe": {
-      "type": "doodle",
-      "settings": {
-        "doodle": "shopify:\/\/shop_images\/doodle_4.svg",
-        "top": 70,
-        "left": 25,
-        "size": 20
-      }
-    },
     "image_with_text_MDKgC6": {
       "type": "image-with-text",
       "blocks": {
         "heading_jYNHzM": {
           "type": "heading",
           "settings": {
-            "heading": "Don’t worry. Nos FA-MEUX classiques sont toujours au menu!",
+            "heading": "Don’t worry. Nos <strong>fa-meux<\/strong> classiques sont toujours au menu!",
             "heading_size": "h0"
           }
         },
@@ -229,6 +164,45 @@
         "section_color_scheme": "background-2",
         "color_scheme": "background-2",
         "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_row_dF4m8L": {
+      "type": "image-row",
+      "blocks": {
+        "heading_RjLHdL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Un p’tit aperçu de ce qui vous attend si vous passez nous voir la bette.",
+            "heading_size": "h0"
+          }
+        },
+        "text_KwUP4r": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*Notre cuisine est saisonnière et varie selon les arrivages et l’inspiration de nos équipes en cuisine.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RjLHdL",
+        "text_KwUP4r"
+      ],
+      "settings": {
+        "image-1": "shopify:\/\/shop_images\/L1030874.jpg",
+        "image-2": "shopify:\/\/shop_images\/L1060189-2.jpg",
+        "image-3": "shopify:\/\/shop_images\/L1150954.jpg",
+        "image-4": "shopify:\/\/shop_images\/L1040843.jpg",
+        "image-5": "shopify:\/\/shop_images\/L1080022.jpg",
+        "cursor": "shopify:\/\/shop_images\/cursor_4.svg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "section_color_scheme": "background-2",
         "mobile_content_alignment": "left",
         "padding_top": 40,
         "padding_bottom": 40
@@ -279,15 +253,6 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "doodle_dqtfCx": {
-      "type": "doodle",
-      "settings": {
-        "doodle": "shopify:\/\/shop_images\/doodle_3.svg",
-        "top": 50,
-        "left": 90,
-        "size": 20
       }
     },
     "image_with_text_T43D3V": {
@@ -388,16 +353,12 @@
   },
   "order": [
     "rich_text_3EMf4N",
-    "doodle_UcMmch",
     "image_row_cxG977",
     "doodle_VXMV7W",
     "image_with_text_qy8MkJ",
-    "doodle_mMbtGp",
-    "image_row_dF4m8L",
-    "doodle_zd4QKe",
     "image_with_text_MDKgC6",
+    "image_row_dF4m8L",
     "image_with_text_TcFjtN",
-    "doodle_dqtfCx",
     "image_with_text_T43D3V",
     "image_with_text_398C3m"
   ]

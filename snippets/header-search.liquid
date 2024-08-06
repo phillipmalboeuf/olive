@@ -30,7 +30,7 @@
       aria-modal="true"
       aria-label="{{ 'general.search.search' | t }}"
     >
-      <div class="modal-overlay"></div>
+      {% comment %} <div class="modal-overlay"></div> {% endcomment %}
       <div
         class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}"
         tabindex="-1"
@@ -43,7 +43,7 @@
         <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
           <div class="field">
             <input
-              class="search__input field__input"
+              class="search__input field__input focus-none"
               id="{{ input_id }}"
               type="search"
               name="q"
