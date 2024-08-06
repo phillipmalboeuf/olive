@@ -126,6 +126,7 @@
           "settings": {
             "heading": "olive\\n+gourmando",
             "physics": true,
+            "replacement": "shopify:\/\/shop_images\/Logo_white.svg",
             "heading_size": "hxxl"
           }
         }

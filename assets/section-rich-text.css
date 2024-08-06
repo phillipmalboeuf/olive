@@ -32,6 +32,18 @@
     min-height: 60vh;
   }
 
+@media screen and (max-width: 750px) {
+  .rich-text__wrapper--mid,
+  .rich-text__wrapper--Mid {
+    min-height: 50vh;
+  }
+
+  .rich-text__wrapper--full {
+    min-height: 50vh;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .rich-text__wrapper {
     width: 100%;
@@ -98,4 +110,26 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
+}
+
+.rich-text__replacement {
+  margin: 0 -20px;
+}
+
+  .rich-text__replacement img {
+    width: 100%;
+    height: 50svh;
+    object-fit: contain;
+  }
+
+@media screen and (max-width: 750px) {
+  .rich-text__replacement + .rich-text__heading {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .rich-text__replacement {
+    display: none;
+  }
 }

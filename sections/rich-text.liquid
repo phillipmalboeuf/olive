@@ -23,6 +23,11 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
+              {% if block.settings.replacement %}
+              <figure class="rich-text__replacement">
+              {{ block.settings.replacement | image_url: width: 1800 | image_tag }}
+              </figure>
+              {% endif %}
               <h2
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}"
                 {{ block.shopify_attributes }}
@@ -228,6 +233,11 @@
           "id": "physics",
           "default": false,
           "label": "Physics"
+        },
+        {
+          "type": "image_picker",
+          "id": "replacement",
+          "label": "Physics replacement"
         },
         {
           "type": "select",

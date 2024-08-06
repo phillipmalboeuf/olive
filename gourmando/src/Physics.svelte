@@ -33,6 +33,7 @@
   const ascenders = 'lidtfjkb'
 
   onMount(() => {
+    if (window.innerWidth < 750) return
     text.style.display = "none"
     element.style.position = "relative"
 
@@ -293,6 +294,12 @@
     box-sizing: border-box;
     /* padding: 40px; */
   }
+
+@media screen and (max-width: 750px) {
+  figure {
+    display: none;
+  }
+}
 
   figure > :global(*) {
     line-height: 1;
