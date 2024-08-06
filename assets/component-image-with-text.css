@@ -447,6 +447,10 @@
   margin-bottom: 1rem;
 }
 
+.image-with-text__heading strong {
+  color: #A9452D;
+}
+
 .image-with-text:not(.image-with-text--split) .image-with-text__heading {
   
 }

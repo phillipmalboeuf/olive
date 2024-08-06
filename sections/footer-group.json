@@ -40,6 +40,7 @@
       ],
       "settings": {
         "color_scheme": "",
+        "cursor": "shopify:\/\/shop_images\/Curseur8_e32f60e8-a0ba-46a5-b2a3-bf84fdf4270e.svg",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 40
@@ -94,7 +95,7 @@
       ],
       "settings": {
         "color_scheme": "inverse",
-        "cursor": "shopify:\/\/shop_images\/cursor_9.svg",
+        "cursor": "shopify:\/\/shop_images\/Curseur10_2f35ad5f-44ba-47ea-8343-17024b8aa6da.svg",
         "newsletter_enable": false,
         "newsletter_heading": "Inscrivez-vous à notre infolettre!",
         "enable_follow_on_shop": false,
@@ -133,7 +134,7 @@
         "heading_krtFtj"
       ],
       "settings": {
-        "cursor": "shopify:\/\/shop_images\/cursor_9.svg",
+        "cursor": "shopify:\/\/shop_images\/Curseur10_2f35ad5f-44ba-47ea-8343-17024b8aa6da.svg",
         "height": "Mid",
         "desktop_content_position": "left",
         "content_alignment": "left",

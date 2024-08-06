@@ -5,6 +5,7 @@
 
 .image-row {
   display: flex;
+  justify-content: center;
   gap: 20px;
   width: 100%;
   list-style: none;
@@ -19,6 +20,7 @@
 
   .image-row li {
     flex: 1;
+    max-width: 25vw;
   }
 
 @media screen and (max-width: 750px) {

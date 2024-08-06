@@ -19,7 +19,8 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+<div class="newsletter {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}"
+  {% if section.settings.cursor %}data-cursor="{{section.settings.cursor | image_url}}"{% endif %}>
   <div class="color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %}">
     <div class="grid grid--gapless grid--1-col grid--2-col-tablet">
       <div class="grid__item newsletter__wrapper section-{{ section.id }}-padding">
@@ -197,6 +198,11 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "cursor",
+      "label": "Cursor"
     },
     {
       "type": "checkbox",
