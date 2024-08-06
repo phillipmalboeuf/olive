@@ -16,6 +16,8 @@
   let w: number = $state()
   let h: number = $state()
 
+  let hidden = $state(false)
+
   function isTouchDevice() {
     // @ts-ignore
     return (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
@@ -50,6 +52,15 @@
   if (isTouchDevice()) return
   if (!visible) return
 
+  // @ts-ignore
+  if (!hidden && ['BUTTON', 'A', 'INPUT'].includes(e.target.nodeName)) {
+    hidden = true
+
+  // @ts-ignore
+  } else if (hidden && !['BUTTON', 'A', 'INPUT'].includes(e.target.nodeName)) {
+    hidden = false
+  }
+
   x = e.clientX
   y = e.clientY
 
@@ -61,11 +72,9 @@
   y = e.clientY
 }} /> -->
 
-{#if visible}
-<figure style:left={`${x}px`} style:top={`${y}px`} bind:clientWidth={w} bind:clientHeight={h}>
+<figure class:hidden={!visible || hidden} style:left={`${x}px`} style:top={`${y}px`} bind:clientWidth={w} bind:clientHeight={h}>
   <img {src} alt="Cursor" />
 </figure>
-{/if}
 
 <style>
   figure {
@@ -75,7 +84,7 @@
     position: fixed;
     z-index: 6666;
     transform: translate(-50%, -50%);
-    transition: transform 666ms, opacity 666ms;
+    /* transition: transform 666ms, opacity 666ms; */
     pointer-events: none;
 
 
