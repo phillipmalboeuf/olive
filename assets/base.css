@@ -77,7 +77,7 @@
 /* base */
 
 .page-width {
-  max-width: var(--page-width);
+  /* max-width: var(--page-width); */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -321,7 +321,7 @@ h1,
 h2,
 .h2 {
   font-family: var(--font-body-family);
-  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-size: calc(var(--font-heading-scale) * 2.4rem);
 }
 
 @media only screen and (min-width: 750px) {
@@ -334,7 +334,7 @@ h2,
 h3,
 .h3 {
   font-family: var(--font-body-family);
-  font-size: calc(var(--font-heading-scale) * 1.7rem);
+  font-size: calc(var(--font-heading-scale) * 2.4rem);
 }
 
 @media only screen and (min-width: 750px) {
@@ -1278,14 +1278,21 @@ button.shopify-payment-button__button--unbranded {
   transition: box-shadow var(--duration-short) ease;
 }
 
+.button:not([disabled]):hover,
+.shopify-challenge__button:hover,
+.customer button:hover,
+.shopify-payment-button__button--unbranded:hover {
+  background-color: rgba(var(--color-foreground), 0.04);
+}
+
 .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
 .customer button:hover::after,
 .shopify-payment-button__button--unbranded:hover::after {
-  --border-offset: 1.3px;
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+  /* --border-offset: 1.3px; */
+  /* box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background)); */
 }
 
 .button--secondary:after {
@@ -1655,7 +1662,9 @@ details[open] > .share-button__fallback {
 .customer .field input:focus-visible,
 .customer select:focus-visible,
 .localization-form__select:focus-visible.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
+  /* box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground)); */
+  background-color: rgba(var(--color-foreground), 0.04);
+  box-shadow: none;
   outline: 0;
   border-radius: var(--inputs-radius);
 }
@@ -1665,7 +1674,9 @@ details[open] > .share-button__fallback {
 .customer .field input:focus,
 .customer select:focus,
 .localization-form__select:focus.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
+  /* box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground)); */
+  background-color: rgba(var(--color-foreground), 0.04);
+  box-shadow: none;
   outline: 0;
   border-radius: var(--inputs-radius);
 }
@@ -2673,7 +2684,7 @@ details[open] .modal-overlay::after {
 
 .search-modal {
   opacity: 0;
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border-bottom: 1px solid;
   min-height: calc(100% + var(--inputs-margin-offset) + (2 * var(--inputs-border-width)));
   height: 100%;
 }

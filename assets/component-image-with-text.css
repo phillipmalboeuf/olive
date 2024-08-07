@@ -108,6 +108,11 @@
   .image-with-text__content {
     padding: 0 var(--padding-top);
   }
+
+  .image-with-text__grid--reverse .image-with-text__content {
+    padding-left: 0;
+    padding-right: calc(var(--padding-top) * 2);
+  }
 }
 
 .image-with-text .grid__item {}

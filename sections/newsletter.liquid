@@ -19,7 +19,7 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}"
+<div id="newsletter" class="newsletter {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}"
   {% if section.settings.cursor %}data-cursor="{{section.settings.cursor | image_url}}"{% endif %}>
   <div class="color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %}">
     <div class="grid grid--gapless grid--1-col grid--2-col-tablet">

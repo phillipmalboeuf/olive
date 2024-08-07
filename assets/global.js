@@ -436,6 +436,12 @@ class MenuDrawer extends HTMLElement {
     this.querySelectorAll(
       'button:not(.localization-selector):not(.country-selector__close-button):not(.country-filter__reset-button)'
     ).forEach((button) => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
+    this.querySelectorAll(
+      'a'
+    ).forEach((anchor) => anchor.addEventListener('click', (event) => {
+      console.log(this.mainDetailsToggle.querySelector('summary'))
+      this.closeMenuDrawer(event, this.mainDetailsToggle.querySelector('summary'))
+    }));
   }
 
   onKeyUp(event) {
@@ -504,7 +510,7 @@ class MenuDrawer extends HTMLElement {
     removeTrapFocus(elementToFocus);
     this.closeAnimation(this.mainDetailsToggle);
 
-    if (event instanceof KeyboardEvent) elementToFocus?.setAttribute('aria-expanded', false);
+    elementToFocus?.setAttribute('aria-expanded', false);
   }
 
   onFocusOut() {

@@ -91,7 +91,6 @@
         },
         "button_UFnHDG": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "button_label": "Voir le menu",
             "button_link": "shopify:\/\/pages\/menu",
@@ -105,6 +104,7 @@
         "button_UFnHDG"
       ],
       "settings": {
+        "identifier": "royalmount",
         "image": "shopify:\/\/shop_images\/L1050004.jpg",
         "cursor": "shopify:\/\/shop_images\/Curseur3_aa443265-3e1e-4b5d-8afe-0e032db45ece.svg",
         "height": "medium",
@@ -127,7 +127,7 @@
         "heading_jYNHzM": {
           "type": "heading",
           "settings": {
-            "heading": "Don’t worry. Nos <strong>fa-meux<\/strong> classiques sont toujours au menu!",
+            "heading": "Don’t worry.\\nNos <strong>fa-meux<\/strong> classiques sont toujours au menu!",
             "heading_size": "h0"
           }
         },
@@ -154,6 +154,7 @@
         "button_XNHaHa"
       ],
       "settings": {
+        "identifier": "menus",
         "image": "shopify:\/\/shop_images\/L1060389.jpg",
         "cursor": "shopify:\/\/shop_images\/Curseur4_2bfad194-e154-40e4-9d4f-0a304506dd5e.svg",
         "height": "large",
@@ -230,7 +231,7 @@
           "type": "button",
           "settings": {
             "button_label": "Commander",
-            "button_link": "shopify:\/\/pages\/livraisons",
+            "button_link": "https:\/\/olivegourmando.order-online.ai\/",
             "button_style_secondary": true
           }
         }
@@ -241,6 +242,7 @@
         "button_rEgUUt"
       ],
       "settings": {
+        "identifier": "",
         "cursor": "shopify:\/\/shop_images\/Curseur6_197bf8f8-b8b5-4c74-a031-6f15a671d537.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -288,6 +290,7 @@
         "button_DyJWTF"
       ],
       "settings": {
+        "identifier": "",
         "image": "shopify:\/\/shop_images\/L1070577.jpg",
         "cursor": "shopify:\/\/shop_images\/Curseur7_0495ab8a-f7dd-4fc8-983b-072e336bca9f.svg",
         "height": "adapt",
@@ -336,6 +339,7 @@
         "button_7GGXBb"
       ],
       "settings": {
+        "identifier": "emplois",
         "cursor": "shopify:\/\/shop_images\/Curseur9_72b536d4-676d-424b-b2c5-4d860d48cd2b.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
