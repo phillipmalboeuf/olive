@@ -4,6 +4,7 @@
   "sections": {
     "doodle_GNyXha": {
       "type": "doodle",
+      "disabled": true,
       "settings": {
         "doodle": "shopify:\/\/shop_images\/doodle_2.svg",
         "top": 0,
@@ -17,7 +18,7 @@
         "heading_nzW8JN": {
           "type": "heading",
           "settings": {
-            "heading": "On s’aime un peu, beaucoup,\\n\u2028à la folie?",
+            "heading": "On s’aime un peu, beaucoup,\\nà la folie?",
             "heading_size": "h2"
           }
         },
@@ -111,6 +112,7 @@
     },
     "doodle_X8LUeG": {
       "type": "doodle",
+      "disabled": true,
       "settings": {
         "doodle": "shopify:\/\/shop_images\/doodle_1.svg",
         "top": 0,
@@ -125,8 +127,9 @@
           "type": "heading",
           "settings": {
             "heading": "olive\\n+gourmando",
-            "physics": true,
+            "physics": false,
             "replacement": "shopify:\/\/shop_images\/Logo_white.svg",
+            "desktop_replacement": "shopify:\/\/shop_images\/DESKTOP_LOGO.svg",
             "heading_size": "hxxl"
           }
         }

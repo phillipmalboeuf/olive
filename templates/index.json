@@ -50,6 +50,7 @@
         "text_PxAL6F"
       ],
       "settings": {
+        "identifier": "histoire",
         "image-1": "shopify:\/\/shop_images\/L1050668.jpg",
         "image-2": "shopify:\/\/shop_images\/L1040468.jpg",
         "cursor": "shopify:\/\/shop_images\/Curseur2_d7d5b6f4-7004-474e-986b-7b3b0d4fdc4c.svg",
@@ -65,6 +66,7 @@
     },
     "doodle_VXMV7W": {
       "type": "doodle",
+      "disabled": true,
       "settings": {
         "doodle": "shopify:\/\/shop_images\/doodle_6.svg",
         "top": 60,
@@ -194,6 +196,7 @@
         "text_KwUP4r"
       ],
       "settings": {
+        "identifier": "",
         "image-1": "shopify:\/\/shop_images\/L1030874.jpg",
         "image-2": "shopify:\/\/shop_images\/L1060189-2.jpg",
         "image-3": "shopify:\/\/shop_images\/L1150954.jpg",
@@ -216,7 +219,7 @@
         "heading_7R6Pwe": {
           "type": "heading",
           "settings": {
-            "heading": "Bye bye la file, bonjour la magie d’Olive \u2028à la maison.",
+            "heading": "Bye bye la file, bonjour la magie d’Olive à la maison.",
             "heading_size": "h0"
           }
         },
