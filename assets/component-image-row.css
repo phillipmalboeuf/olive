@@ -49,7 +49,7 @@
 }
 
 .image-row--medium img {
-  height: min(50lvh, 50lvw);
+  height: min(50lvh, 60lvw);
 }
 
 .image-row--large img {

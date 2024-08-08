@@ -162,7 +162,11 @@
   </div>
 </div>
 
-<hr class="color-{{ section.settings.section_color_scheme }}">
+{%- unless section.settings.section_color_scheme.id == 'accent-2' -%}
+{%- unless section.settings.section_color_scheme.id == 'inverse' -%}
+<hr class="color-{{ section.settings.section_color_scheme }}">  
+{%- endunless -%}
+{%- endunless -%}
 
 {% schema %}
 {

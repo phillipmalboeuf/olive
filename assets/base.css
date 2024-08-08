@@ -275,7 +275,7 @@ h5,
 
 .hxxl {
   font-family: var(--font-body-family);
-  font-size: 17vw;
+  font-size: 16.66vw;
   line-height: 0.8;
 }
 
@@ -1663,7 +1663,7 @@ details[open] > .share-button__fallback {
 .customer select:focus-visible,
 .localization-form__select:focus-visible.localization-form__select:after {
   /* box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground)); */
-  background-color: rgba(var(--color-foreground), 0.04);
+  /* background-color: rgba(var(--color-foreground), 0.04); */
   box-shadow: none;
   outline: 0;
   border-radius: var(--inputs-radius);
@@ -1675,7 +1675,7 @@ details[open] > .share-button__fallback {
 .customer select:focus,
 .localization-form__select:focus.localization-form__select:after {
   /* box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground)); */
-  background-color: rgba(var(--color-foreground), 0.04);
+  /* background-color: rgba(var(--color-foreground), 0.04); */
   box-shadow: none;
   outline: 0;
   border-radius: var(--inputs-radius);

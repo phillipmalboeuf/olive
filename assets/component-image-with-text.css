@@ -35,7 +35,7 @@
 }
 
 .image-with-text__media--medium {
-  height: min(50lvh, 50lvw);
+  height: min(50lvh, 60lvw);
 }
 
 .image-with-text__media--large {

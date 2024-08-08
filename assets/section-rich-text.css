@@ -123,13 +123,27 @@
   }
 
 @media screen and (max-width: 750px) {
-  .rich-text__replacement + .rich-text__heading {
+  .rich-text__replacement + .rich-text__heading,
+  .rich-text__replacement + .rich-text__replacement {
     display: none;
   }
 }
 
 @media screen and (min-width: 750px) {
   .rich-text__replacement {
+    margin: 0;
+  }
+
+  .rich-text__replacement img {
+    height: auto;
+  }
+
+  .rich-text__replacement,
+  .rich-text__replacement + .rich-text__replacement + .rich-text__heading {
     display: none;
+  }
+
+  .rich-text__replacement + .rich-text__replacement {
+    display: block;
   }
 }

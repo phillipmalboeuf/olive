@@ -28,6 +28,11 @@
               {{ block.settings.replacement | image_url: width: 1800 | image_tag }}
               </figure>
               {% endif %}
+              {% if block.settings.desktop_replacement %}
+              <figure class="rich-text__replacement">
+              {{ block.settings.desktop_replacement | image_url: width: 1800 | image_tag }}
+              </figure>
+              {% endif %}
               <h2
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}"
                 {{ block.shopify_attributes }}
@@ -238,6 +243,11 @@
           "type": "image_picker",
           "id": "replacement",
           "label": "Physics replacement"
+        },
+        {
+          "type": "image_picker",
+          "id": "desktop_replacement",
+          "label": "Desktop Physics replacement"
         },
         {
           "type": "select",
