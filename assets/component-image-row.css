@@ -52,6 +52,10 @@
   height: min(50lvh, 60lvw);
 }
 
+.image-row-section--short .image-row--medium img {
+  height: min(60lvh, 60lvw);
+}
+
 .image-row--large img {
   height: min(100lvh, 100lvw);
 }
