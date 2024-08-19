@@ -29,7 +29,15 @@
   }
 
 @media screen and (max-width: 750px) {
-  .image-row li:nth-child(n + 3) {
+  .image-row {
+    flex-wrap: wrap;
+  }
+
+  .image-row li {
+    flex: none;
+  }
+
+  .image-row li:nth-child(n + 5) {
     display: none;
   }
 }

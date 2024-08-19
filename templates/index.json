@@ -87,7 +87,7 @@
         "text_6rdi8f": {
           "type": "text",
           "settings": {
-            "text": "<h3>Notre p'tit dernier<\/h3><p>On prend place dans le tout nouveau, tout beau centre Royalmount, pour se rapprocher des gens pour qui le Vieux-Montréal est juste un peu trop loin. Promis, on y retrouve la même ambiance chaleureuse et les mêmes classiques qu’à notre resto de la rue Saint-Paul, mais avec une petite twist bien spéciale comme on y sert aussi une cuisine de soir.<\/p>",
+            "text": "<h3>Notre p'tit dernier<\/h3><p>On prend place dans le tout nouveau, tout beau centre Royalmount, pour se rapprocher des gens pour qui le Vieux-Montréal est juste un peu trop loin. Promis, on y retrouve la même ambiance chaleureuse et les mêmes classiques qu’à notre resto de la rue Saint-Paul, mais avec une petite twist ben spéciale comme on y sera aussi ouvert de soir.<\/p>",
             "text_style": "body"
           }
         },
@@ -107,7 +107,7 @@
       ],
       "settings": {
         "identifier": "royalmount",
-        "image": "shopify:\/\/shop_images\/L1050004.jpg",
+        "image": "shopify:\/\/shop_images\/20231027_O_2BG_Royalmount_AXO.jpg",
         "cursor": "shopify:\/\/shop_images\/Curseur3_aa443265-3e1e-4b5d-8afe-0e032db45ece.svg",
         "height": "medium",
         "desktop_image_width": "medium",
@@ -129,7 +129,7 @@
         "heading_jYNHzM": {
           "type": "heading",
           "settings": {
-            "heading": "Don’t worry.\\nNos <strong>fa-meux<\/strong> classiques sont toujours au menu!",
+            "heading": "Bonne nouvelle!\\nNos <strong>fa-meux<\/strong> classiques sont toujours au menu!",
             "heading_size": "h0"
           }
         },
@@ -246,10 +246,11 @@
       ],
       "settings": {
         "identifier": "",
+        "image": "shopify:\/\/shop_images\/Mobile_1.svg",
         "cursor": "shopify:\/\/shop_images\/Curseur6_197bf8f8-b8b5-4c74-a031-6f15a671d537.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "hide",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "split",
@@ -257,8 +258,8 @@
         "color_scheme": "accent-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "image_with_text_T43D3V": {
@@ -294,7 +295,7 @@
       ],
       "settings": {
         "identifier": "",
-        "image": "shopify:\/\/shop_images\/L1070577.jpg",
+        "image": "shopify:\/\/shop_images\/L1100777-2.jpg",
         "cursor": "shopify:\/\/shop_images\/Curseur7_0495ab8a-f7dd-4fc8-983b-072e336bca9f.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -343,10 +344,11 @@
       ],
       "settings": {
         "identifier": "emplois",
+        "image": "shopify:\/\/shop_images\/Mobile_2.svg",
         "cursor": "shopify:\/\/shop_images\/Curseur9_72b536d4-676d-424b-b2c5-4d860d48cd2b.svg",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "hide",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "split",

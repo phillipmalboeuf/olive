@@ -24,6 +24,8 @@
   }
 
   onMount(() => {
+    if (window.innerWidth < 750) return
+    if (isTouchDevice()) return
     element.style.cursor = "none"
 
     const enter = on(element, "mouseenter", (e) => {
@@ -95,6 +97,12 @@
 
     &.hidden {
       opacity: 0;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    figure {
+      display: none;
     }
   }
 </style>

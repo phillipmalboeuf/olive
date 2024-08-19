@@ -62,14 +62,14 @@
           "type": "text",
           "settings": {
             "heading": "Vieux-Montréal",
-            "subtext": "<p>Ouvert 7\/7<br\/>9 h – 17 h<\/p><p>351, rue Saint-Paul O.<br\/>Montréal QC H2Y 2A7<br\/>514 350-1083<\/p>"
+            "subtext": "<p>351, rue Saint-Paul O.<br\/>Montréal QC H2Y 2A7<br\/>514 350-1083<\/p><p><em>Restaurant<\/em><br\/>Ouvert 7\/7, 9 h – 17 h<\/p><p><em>Boutique<\/em><br\/>Ouvert 7\/7, 10 h – 17 h<\/p>"
           }
         },
         "text_9kDzaP": {
           "type": "text",
           "settings": {
             "heading": "Royalmount",
-            "subtext": "<p>Ouvert 7\/7<br\/>11 h – 21 h<\/p><p>123, av. Royalmount<br\/>\u2028Montréal QC H2Y 2A7<br\/>514 123-4567<\/p>"
+            "subtext": "<p>123, av. Royalmount<br\/>\u2028Montréal QC H2Y 2A7<br\/>514 123-4567<\/p><p><em>Restaurant<\/em><br\/>Ouvert 7\/7, 11 h – 21 h<\/p>"
           }
         },
         "text_wVMnBj": {

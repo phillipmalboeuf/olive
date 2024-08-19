@@ -24,7 +24,7 @@
   }
 
   .rich-text__wrapper--full {
-    min-height: calc(100vh - 165px);
+    min-height: calc(100svh - 165px);
   }
 
   .rich-text__wrapper--mid,
